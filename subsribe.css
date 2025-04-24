@@ -1,0 +1,147 @@
+/* Reset and base styles */
+body,
+h1,
+h2,
+p,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    max-width: 150px;
+    vertical-align: middle;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.main {
+   margin-top: 7rem;
+}
+
+.subscription {
+    background: #f4f4f4;
+    padding: 20px 0;
+}
+
+.cashier img {
+    width: 600px;
+    /* height: 450px; */
+    /* object-fit: contain; */
+    border-radius: 8px;
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+.card-container {
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    min-width: calc(33% - 20px);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.card p {
+    padding: 10px;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+}
+/* .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+    /* color: white; */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-overlay p {
+    text-align: center;
+/* } */ 

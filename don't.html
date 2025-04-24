@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance </title>
+    <link rel="stylesheet" href="ctcs.css">
+</head>
+
+<body>
+
+    <div class="ambulance-container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by region/area..." onkeyup="filterAmbulances()">
+        </div>
+
+        <!-- Sort and Filter Options -->
+        <div class="sort-filter">
+            <!-- Sort Options -->
+            <select id="sortPrice" onchange="sortAmbulances()">
+                <option value="">Sort by Price</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+
+            <select id="sortType" onchange="filterAmbulances()">
+                <option value="">Sort by Vehicle Type</option>
+                <option value="BLS">Basic Life Support (BLS)</option>
+                <option value="ALS">Advanced Life Support (ALS)</option>
+                <option value="Patient Transport">Patient Transport</option>
+            </select>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filters">
+            <h3>Filters</h3>
+            <div>
+                <label>Vehicle Type:</label>
+                <input type="checkbox" class="filterType" value="BLS" onchange="filterAmbulances()"> BLS
+                <input type="checkbox" class="filterType" value="ALS" onchange="filterAmbulances()"> ALS
+                <input type="checkbox" class="filterType" value="Patient Transport" onchange="filterAmbulances()">
+                Patient Transport
+            </div>
+            <div>
+                <label>Price Range:</label>
+                <input type="range" id="priceRange" min="150" max="500" step="50" value="500"
+                    oninput="updatePriceFilter()">
+                <span id="priceRangeValue">$500</span>
+            </div>
+        </div>
+
+        <!-- Ambulance Gallery -->
+        <div id="ambulanceGallery" class="gallery">
+            <!-- Example ambulance items -->
+            <div class="ambulance ambulance1" data-region="San Francisco, Chicago" data-type="BLS" data-price="200">
+                <img src="./assets/image-gallery/van-1.jpg" alt="Ambulance 1">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p>Name: Ambulance A</p>
+                        <p>Type: BLS</p>
+                        <p>Price: $200</p>
+                    </span>
+                    <span class="text text-after">
+                        <p>Basic Plan: The Basic Plan offers essential ambulance services, including Basic Life Support (BLS) with basic medical care and transportation to the nearest hospital. It features limited equipment and no advanced care, making it the least expensive option, suitable for non-life-threatening emergencies and routine transport needs.</p>
+                    </span>
+                </div>
+               
+            </div>
+            <div class="ambulance" data-region="New York" data-type="ALS" data-price="350">
+                <img src="./assets/image-gallery/van-2.jpg" alt="Ambulance 2">
+                <p>Name: Ambulance B</p>
+                <p>Type: ALS</p>
+                <p>Price: $350</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-3.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-4.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-5.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-6.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-7.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-8.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-9.png" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-10.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-11.webp" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-12.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-13.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div>
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150"></div>
+                <img src="./assets/image-gallery/van-14.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p> -->
+            </div>
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150"></div>
+                <img src="./assets/image-gallery/van-15.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div> -->
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150"></div>
+                <img src="./assets/image-gallery/van-16.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div> -->
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150"></div>
+                <img src="./assets/image-gallery/van-17.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div> -->
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-18.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div> -->
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-19.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div> -->
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-20.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div> -->
+            <!-- <div class="ambulance" data-region="Los Angeles" data-type="Patient Transport" data-price="150">
+                <img src="./assets/image-gallery/van-21.jpg" alt="Ambulance 3">
+                <p>Name: Ambulance C</p>
+                <p>Type: Patient Transport</p>
+                <p>Price: $150</p>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="ctcs.js"></script>
+</body>
+
+</html>

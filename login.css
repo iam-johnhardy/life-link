@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Dancing Script", system-ui;
+  src: url(./font/static/static/DancingScript-Regular.ttf);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(228, 240, 254, 0.1);
+  height: 100vh;
+  gap: 5rem;
+}
+
+.login-page {
+  /* border: 1xp solid #000; */
+}
+
+.login-page h2{
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  width: 100px;
+  font-size: 20px;
+
+}
+
+input {
+  padding: 15px ;
+  width: 400px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  color: rgba(128, 128, 128, 0.963);
+}
+
+
+.login {
+  font-family: "Dancing Script", system-ui;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin: auto 100px;
+  background-color: #E90043;
+  padding: 10px 40px;
+  border-radius: 20px;
+  transition: ease-in-out;
+  transition-duration: 3s;
+  margin-top: 30px
+
+}
+
+.login:hover {
+  background-color: green;
+}
+
+
+.login a {
+  color: #fff;
+}
+
+.sign-up {
+  margin-top: 10px;
+  font-family: "Dancing Script", system-ui;
+}
+.bg-image{
+  width: 50%;
+  border-radius: 60px;
+}

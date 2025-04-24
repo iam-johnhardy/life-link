@@ -1,0 +1,96 @@
+
+   body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.ambulance-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.sort-filter {
+    margin-bottom: 20px;
+}
+
+.sort-filter select {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ambulance {
+    padding: 10px;
+    width: 30%;
+    display: inline;
+    transition: transform 0.3s ease;
+}
+
+.ambulance img {
+    width: 90%;
+    transition: transform 0.3s ease;
+}
+
+.ambulance:hover {
+    transform: scale(1.05);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ambulance:hover img {
+    transform: scale(1.0);
+}
+
+
+
+.text-hover {
+    font-weight: bold;
+    color: #333;
+}
+
+.text {
+    position: absolute;
+    transition: opacity 0.3s ease;
+}
+
+.ambulance-text {
+    display: block;
+}
+
+.text-after {
+    display: block;
+    opacity: 0;
+}
+
+.text-hover:hover .ambulance-text {
+    opacity: 0;
+}
+
+.text-hover:hover .text-after {
+    opacity: 1;
+    line-height: 30px;
+}

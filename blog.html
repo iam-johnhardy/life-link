@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="./blog.css">
+</head>
+
+<body>
+    <div class="box_contianer">
+        <header>
+            <h1>Our Blog</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="blog-posts">
+                <div class="post" onclick="openModal('post1')">
+                    <img src="./image/News (1).jpg" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>New Protocols for Cardiac Arrest Response Save Lives.</p>
+                    <a href="chooper.html">Read More</a>
+                </div>
+                <div class="post" onclick="openModal('post2')">
+                    <img src="./image/News (2).jpg" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>Telemedicine's Role in Emergency Care During Natural Disasters.</p>
+                    <a href="./chopper1.html">Read More</a>
+                </div>
+                <div class="post" onclick="openModal('post3')">
+                    <img src="./image/News (3).jpg" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>Advancements in Drone Technology for Medical Deliveries.</p>
+                    <a href="./chopper2.html">Read More</a>
+                </div>
+                <div class="post" onclick="openModal('post4')">
+                    <img src="./image/News (4).jpg" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>The Rise of Mental Health Emergencies in Urban Areas.</p>
+                    <a href="./chopper3.html">Read More</a>
+                </div>
+                <div class="post" onclick="openModal('post5')">
+                    <img src="./image/News (5).webp" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>Innovative Use of AI in Emergency Triage.</p>
+                    <a href="./chopper4.html">Read More</a>
+                </div>
+                <div class="post" onclick="openModal('post6')">
+                    <img src="./image/News (6).jpg" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>Community Initiatives to Enhance Emergency Preparedness.</p>
+                    <a href="./chopper5.html">Read More</a>
+                </div>
+                <div class="post" onclick="openModal('post7')">
+                    <img src="./image/News (7).jpg" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>Challenges Faced by Ambulance Services During Peak Seasons.</p>
+                    <a href="./chopper6.html">Read More</a>
+                </div>
+                <div class="post" onclick="openModal('post8')">
+                    <img src="./image/news(8).jpg" alt="Emergency Response Blog Post">
+                    <h2>Headline</h2>
+                    <p>The Impact of COVID-19 on Emergency Medical Services.</p>
+                    <a href="./chopper7.html">Read More</a>
+                </div>
+            </div>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

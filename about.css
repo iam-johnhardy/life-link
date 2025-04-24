@@ -1,0 +1,222 @@
+
+
+.company-info{
+	display: flex;
+	gap: 30px;
+	background-color: #f5f9fc;
+	padding: 50px;
+}
+.company-infoText{
+	width: 70%;
+}
+.company-infoText h1{
+	font-size: 45px;
+	margin-bottom: 0;
+}
+.company-infoText p{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.company-info img{
+	border-radius: 10px;
+}
+.company-info img:hover{
+	transform: scale(1.12);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.our-journey{
+	display: flex;
+	gap: 30px;
+	padding: 50px;
+}
+.our-journeyText{
+	width: 70%;
+	margin-top: 50px;
+}
+.our-journeyText h1{
+	font-size: 45px;
+	margin-bottom: 0;
+}
+.our-journeyText p{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.our-journey img{
+	border-radius: 10px;
+}
+
+.our-journey img:hover{
+	transform: scale(1.12);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 15px;
+}
+
+.top-performing{
+	padding: 50px;
+}
+.top-performingText h1{
+	font-size: 45px;
+	margin-bottom: 0;
+}
+.top-performingText p{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.ambulance-a{
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+.ambulance-aText{
+	line-height: 40px;
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+.ambulance-a img{
+	width: 40%;
+	border-radius: 7px;
+}
+
+.ambulance-a img:hover{
+	transform: scale(1.12);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+}
+
+.ambulance-b{
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.ambulance-bText{
+	line-height: 40px;
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+.ambulance-b img{
+	width: 40%;
+	border-radius: 7px;
+}
+
+.ambulance-bImg:hover{
+	transform: scale(1.12);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+}
+
+.ambulance-c{
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.ambulance-cText{
+	line-height: 40px;
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+.ambulance-c img{
+	width: 40%;
+	border-radius: 7px;
+}
+
+.ambulance-cImg:hover{
+	transform: scale(1.12);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+}
+
+.our-approach{
+	background-color: #f5f9fc;
+	padding: 50px;
+}
+.our-approach h1{
+	font-size: 45px;
+	margin: 50px 0;
+}
+.our-approach-flex{
+	display: flex;
+	gap: 30px;
+}
+.our-approachText{
+	width: 70%;
+}
+
+.our-approachText p{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.our-approach img{
+	width: 500px;
+	border-radius: 10px;
+}
+.our-approach img:hover{
+	transform: scale(1.12);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+}
+
+
+.cities{
+	padding: 30px;
+	
+}
+
+.cities-flex{
+	padding: 30px;
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+}
+.citiesText{
+	font-size: 18px;
+	line-height: 30px;
+}
+.cities-map{
+	width: 70%;
+	object-fit: contain;
+}
+.our-commitment{
+	background-color: #f5f9fc;
+	padding: 50px;
+	display: flex;
+	gap: 30px;
+}
+.our-commitment h1{
+	font-size: 45px;
+}
+.our-approach-flex{
+	
+}
+.our-commitmentText{
+	width: 70%;
+}
+
+.our-commitmentText p{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.our-commitment img{
+	width: 500px;
+	border-radius: 10px;
+}
+.our-commitment img:hover{
+	transform: scale(1.12);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+}

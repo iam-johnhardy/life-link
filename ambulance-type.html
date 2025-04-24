@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance </title>
+    <link rel="stylesheet" href="ambulance-type.css">
+</head>
+
+<body>
+
+    <div class="ambulance-container">
+        <!-- Search Bar -->
+
+        <div class="searchbar">
+            <div class="filter-section">
+                <label for="search"><span>Search:</span></label>
+                <input type="text" id="search" placeholder="Enter region, type, or cost (e.g., Chicago, Advanced, 200)"
+                    onkeyup="filterAmbulances()">
+            </div>
+
+            <div class="sort-filter">
+                <label for="sort"><span>Sort by:</span></label>
+                <select id="sort" onchange="sortAmbulances()">
+                    <option value="cost">Cost</option>
+                    <option value="type">Type</option>
+                </select>
+            </div>
+
+        </div>
+        <header>
+            <h1>eAmbulance Type, Image Gallery</h1>
+        </header>
+
+        <!-- Ambulance Gallery -->
+        <div id="ambulanceGallery" class="gallery">
+            <!-- Example ambulance items -->
+            <div class="ambulance ambulance1 ambulance-item" data-region="Abia, Portharcourt, Abuja"
+                data-cost="200000.00 " data-type="Basic">
+                <img src="./assets/image-gallery/van-1.jpg" alt="Ambulance 1" class="ambulance-outside">
+                <img src="./assets/bsl-4.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Basic Ambulance</p>
+                        <p><strong>Size:</strong> Medium</p>
+                        <p><strong>Cost:</strong> #200000.00</p>
+
+                    </span>
+                    <span class="text text-after">
+                        <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                        <p><strong>Region:</strong> Abia, Portharcourt, Abuja</p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt, 
+            Kaduna, Kastina," data-cost="500000.00" data-type="Premium">
+                <img src="./assets/image-gallery/van-20.jpg" alt="Ambulance 21" class="ambulance-outside">
+                <img src="./assets/air-2.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Premium Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #500000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                            Transport Ventilator</p>
+                        <p><strong>Cost:</strong> #500000.00</p>
+                        <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance1 ambulance-item" data-region=" Portharcourt, Kastina" data-cost="150000.00 "
+                data-type="Basic">
+                <img src="./assets/image-gallery/van-4.jpg" alt="Ambulance 4" class="ambulance-outside">
+                <img src="./assets/bsl-11.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Basic Ambulance</p>
+                        <p><strong>Size:</strong> Small</p>
+                        <p><strong>Cost:</strong> #150000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                        <p><strong>Region:</strong> Portharcourt, Kastina</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance1 ambulance-item" data-region="Kaduna, Abuja" data-cost="150000.00 "
+                data-type="Basic">
+                <img src="./assets/image-gallery/van-5.jpg" alt="Ambulance 5" class="ambulance-outside">
+                <img src="./assets/bsl-7.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Basic Ambulance</p>
+                        <p><strong>Size:</strong> Small</p>
+                        <p><strong>Cost:</strong> #150000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                        <p><strong>Region:</strong> Kaduna, Abuja</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance1 ambulance-item" data-region="Kaduna,Lagos, Kastina" data-cost="200000.00 "
+                data-type="Basic">
+                <img src="./assets/image-gallery/van-6.jpg" alt="Ambulance 6" class="ambulance-outside">
+                <img src="./assets/bsl-10.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Basic Ambulance</p>
+                        <p><strong>Size:</strong> Medium</p>
+                        <p><strong>Cost:</strong> #200000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                        <p><strong>Region:</strong>Kaduna,Lagos, Kastina</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance1 ambulance-item" data-region="Abuja, Abia, Lagos, Kastina"
+                data-cost="250000.00 " data-type="Basic">
+                <img src="./assets/image-gallery/van-7.jpg" alt="Ambulance 7" class="ambulance-outside">
+                <img src="./assets/bls-1.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Basic Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #250000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                        <p><strong>Region:</strong> Abuja, Abia, Lagos, Kastina</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Abia, Kaduna, Portharcourt, Abuja" data-cost="350000.00"
+                data-type="Advanced">
+                <img src="./assets/image-gallery/van-8.jpg" alt="Ambulance 8" class="ambulance-outside">
+                <img src="./assets/bsl-2.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Advanced Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #350000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                        <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                        <p><strong>Region:</strong>Abia, Kaduna, Portharcourt, Abuja</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Lagos, Abia, Kaduna," data-cost="300000.
+            00" data-type="Advanced">
+                <img src="./assets/image-gallery/van-9.png" alt="Ambulance 9" class="ambulance-outside">
+                <img src="./assets/bsl-3.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Advanced Ambulance</p>
+                        <p><strong>Size:</strong> Medium</p>
+                        <p><strong>Cost:</strong> #300000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                        <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                        <p><strong>Region:</strong> Lagos, Abia, Kaduna,</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance1 ambulance-item" data-region="Abia, Kaduna, Portharcourt, Kastina"
+                data-cost="250000.00 " data-type="Basic">
+                <img src="./assets/image-gallery/van-2.jpg" alt="Ambulance 2" class="ambulance-outside">
+                <img src="./assets/bsl-5.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Basic Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #250000.00</p>
+                    </span>
+                    <span class="text text-after">
+                        <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                        <p><strong>Region:</strong> Abia, Kaduna, Portharcourt, Kastina</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Lagos, Kaduna, Portharcourt, Abuja" data-cost="350000.00"
+                data-type="Advanced">
+                <img src="./assets/image-gallery/van-14.jpg" alt="Ambulance 14" class="ambulance-outside">
+                <img src="./assets/bsl-12.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Advanced Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #350000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                        <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                        <p><strong>Region:</strong> Lagos Kaduna, Portharcourt, Abuja</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Lagos, Abuja, Kaduna, Kastina," data-cost="400000.00"
+                data-type="Premium">
+                <img src="./assets/image-gallery/van-16.jpg" alt="Ambulance 16" class="ambulance-outside">
+                <img src="./assets/air-2.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Premium Ambulance</p>
+                        <p><strong>Size:</strong> Small</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Stretcher, oxygen cylinder. Defibrillator, Artificial airway
+                            devices, Transport Ventilator</p>
+                        <p><strong>Specialization:</strong> A/C, ICU</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                        <p><strong>Region:</strong> Lagos, Abuja, Kaduna, Kastina
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Lagos, Abia, Kaduna,Abuja" data-cost="350000.00"
+                data-type="Advanced">
+                <img src="./assets/image-gallery/van-10.jpg" alt="Ambulance 10" class="ambulance-outside">
+                <img src="./assets/bsl-8.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Advanced Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #350000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                        <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                        <p><strong>Region:</strong> Lagos, Abia, Kaduna,Abuja</p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance1 ambulance-item" data-region="Abia, Lagos" data-cost="150000.00 "
+                data-type="Basic">
+                <img src="./assets/image-gallery/van-3-.png" alt="Ambulance 3" class="ambulance-outside">
+                <img src="./assets/bsl-9.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Basic Ambulance</p>
+                        <p><strong>Size:</strong> Small</p>
+                        <p><strong>Cost:</strong> #150000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                        <p><strong>Region:</strong> Abia, Lagos</p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Portharcourt, Kaduna"
+                data-cost="400000.00" data-type="Premium">
+                <img src="./assets/image-gallery/van-12.jpg" alt="Ambulance 12" class="ambulance-outside">
+                <img src="./assets/air-1.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Premium Ambulance</p>
+                        <p><strong>Size:</strong>Small</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Stretcher, oxygen cylinder, Defibrillator, Artificial airway
+                            devices, Transport Ventilator</p>
+                        <p><strong>Specialization:</strong> A/C, ICU</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                        <p><strong>Region:</strong> Abia State, Lagos, Portharcourt, Kaduna,
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Lagos, Abia, Kaduna, Portharcourt" data-cost="350000.00"
+                data-type="Advanced">
+                <img src="./assets/image-gallery/van-13.jpg" alt="Ambulance 13" class="ambulance-outside">
+                <img src="./assets/bsl-13.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Advanced Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #350000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                        <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                        <p><strong>Region:</strong> Lagos, Abia, Kaduna, Portharcourt</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="ambulance ambulance-item" data-region="Lagos, Portharcourt, Abuja" data-cost="300000.00"
+                data-type="Advanced">
+                <img src="./assets/image-gallery/van-15.jpg" alt="Ambulance 15" class="ambulance-outside">
+                <img src="./assets/bsl-14.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Advanced Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #300000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                        <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                        <p><strong>Region:</strong> Lagos,Portharcourt, Abuja</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt, 
+            Kaduna, Kastina," data-cost="500000.00" data-type="Premium">
+                <img src="./assets/image-gallery/van-20.jpg" alt="Ambulance 17" class="ambulance-outside">
+                <img src="./assets/air-3.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Premium Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #500000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Stretcher, oxygen cylinder, Defibrillator, Artificial airway
+                            devices, Transport Ventilator</p>
+                        <p><strong>Specialization:</strong> Non-A/C, Non-ICU</p>
+                        <p><strong>Cost:</strong> #500000.00</p>
+                        <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Abia State, Portharcourt, Kaduna, 
+            Kastina," data-cost="400000.00" data-type="Premium">
+                <img src="./assets/image-gallery/van-19.jpg" alt="Ambulance 18" class="ambulance-outside">
+                <img src="./assets/air-4.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong>Premium Ambulance</p>
+                        <p><strong>Size:</strong> Small</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                            Transport Ventilator</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                        <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt, 
+            Kaduna, Kastina," data-cost="500000.00" data-type="Premium">
+                <img src="./assets/image-gallery/van-18.jpg" alt="Ambulance 19" class="ambulance-outside">
+                <img src="./assets/air-5.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Premium Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #500000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                            Transport Ventilator</p>
+                        <p><strong>Cost:</strong> #500000.00</p>
+                        <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt,"
+                data-cost="400000.00" data-type="Premium">
+                <img src="./assets/image-gallery/van-17.jpg" alt="Ambulance 20" class="ambulance-outside">
+                <img src="./assets/air-6.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Premium Ambulance</p>
+                        <p><strong>Size:</strong> Small</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                        <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                            Transport Ventilator</p>
+                        <p><strong>Cost:</strong> #400000.00</p>
+                        <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt,
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="ambulance ambulance-item" data-region="Lagos, Abia, Portharcourt, Abuja" data-cost="350000.00"
+                data-type="Advanced">
+                <img src="./assets/image-gallery/van-11.webp" alt="Ambulance 11" class="ambulance-outside">
+                <img src="./assets/bsl-6.jpg" alt="" class="ambulance-inside">
+                <div class="text-hover">
+                    <span class="text ambulance-text">
+                        <p><strong>Type:</strong> Advanced Ambulance</p>
+                        <p><strong>Size:</strong> Large</p>
+                        <p><strong>Cost:</strong> #350000.00</p>
+                    </span>
+                    <span class="text text-after">
+
+                        <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                        <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                        <p><strong>Region:</strong> Lagos, Abia,Portharcourt, Abuja</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="ambulance-type.js"></script>
+</body>
+
+</html>

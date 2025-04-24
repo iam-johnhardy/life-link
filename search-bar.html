@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eAmbulance Search, Sort & Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .filter-section {
+      margin-bottom: 20px;
+    }
+
+    .ambulance-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .ambulance-item {
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>eAmbulance Search, Sort & Filter</h1>
+
+  <div class="filter-section">
+    <label for="search">Search by Region, Type, or Cost:</label>
+    <input type="text" id="search" placeholder="Enter region, type, or cost (e.g., Chicago, Advanced, 200)" onkeyup="filterAmbulances()">
+
+    <label for="sort">Sort by:</label>
+    <select id="sort" onchange="sortAmbulances()">
+      <option value="cost">Cost</option>
+      <option value="type">Type</option>
+    </select>
+  </div>
+
+  <ul id="ambulanceList" class="ambulance-list">
+    <li class="ambulance-item" data-region="Chicago" data-cost="200" data-type="Basic">
+      <strong>Type:</strong> Basic <br>
+      <strong>Cost:</strong> $200 <br>
+      <strong>Region:</strong> Chicago
+    </li>
+    <li class="ambulance-item" data-region="New York" data-cost="300" data-type="Advanced">
+      <strong>Type:</strong> Advanced <br>
+      <strong>Cost:</strong> $300 <br>
+      <strong>Region:</strong> New York
+    </li>
+    <li class="ambulance-item" data-region="Chicago" data-cost="250" data-type="Advanced">
+      <strong>Type:</strong> Advanced <br>
+      <strong>Cost:</strong> $250 <br>
+      <strong>Region:</strong> Chicago
+    </li>
+    <li class="ambulance-item" data-region="Los Angeles" data-cost="150" data-type="Basic">
+      <strong>Type:</strong> Basic <br>
+      <strong>Cost:</strong> $150 <br>
+      <strong>Region:</strong> Los Angeles
+    </li>
+  </ul>
+
+  <script>
+    function filterAmbulances() {
+      const searchQuery = document.getElementById('search').value.toLowerCase();
+      const ambulances = document.querySelectorAll('.ambulance-item');
+
+      ambulances.forEach(ambulance => {
+        const region = ambulance.getAttribute('data-region').toLowerCase();
+        const type = ambulance.getAttribute('data-type').toLowerCase();
+        const cost = ambulance.getAttribute('data-cost');
+
+        // Check if the search query matches the region, type, or cost
+        const match = region.includes(searchQuery) || type.includes(searchQuery) || cost.includes(searchQuery);
+
+        // Display only if the match condition is met
+        if (match) {
+          ambulance.style.display = 'block';
+        } else {
+          ambulance.style.display = 'none';
+        }
+      });
+    }
+
+    function sortAmbulances() {
+      const sortCriteria = document.getElementById('sort').value;
+      const ambulanceList = document.getElementById('ambulanceList');
+      const ambulances = Array.from(ambulanceList.getElementsByClassName('ambulance-item'));
+
+      ambulances.sort((a, b) => {
+        if (sortCriteria === 'cost') {
+          return a.getAttribute('data-cost') - b.getAttribute('data-cost');
+        } else if (sortCriteria === 'type') {
+          return a.getAttribute('data-type').localeCompare(b.getAttribute('data-type'));
+        }
+      });
+
+      ambulances.forEach(ambulance => {
+        ambulanceList.appendChild(ambulance);
+      });
+    }
+  </script>
+</body>
+</html>

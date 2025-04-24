@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/lifelink.css">
+  <link rel="stylesheet" href="/footer.css">
+  <meta name="description"
+    content="LifeLink is an innovative eAmbulance platform designed to revolutionize emergency medical response systems. This cutting-edge solution bridges the gap between emergency situations and prompt medical attention, ensuring timely intervention and saving lives.">
+  <meta name="keywords"
+    content="Real-time Emergency Request System, GPS-Enabled Ambulance Tracking, Advanced Patient Data Management, Integrated Telemedicine Consultation, Automated Emergency Response Protocol, and Secure Data Storage and Analytics.">
+  <link rel="shortcut icon" href="./Asset/ambulance-clipart-removebg-preview.png" type="image/x-icon">
+  <title>Lifelink</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="sideBar">
+      <li>
+        <button onclick="hideSidebar()" aria-label="Open Sidebar">
+          <img src="./Asset/close_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+        </button>
+      </li>
+      <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+      <li><a href="#" onclick="navigateTo('about')">About Us</a></li>
+      <li><a href="#" onclick="navigateTo('services')">Services</a></li>
+      <li><a href="#" onclick="navigateTo('contact')">Contact Us</a></li>
+      <li><a href="#" onclick="navigateTo('sitemap')">Sitemap</a></li>
+      <li><a class="book-now-btn" href="./login.html">Book Now</a>
+      </li>
+
+
+    </ul>
+  </nav>
+
+  <header>
+    <nav>
+      <ul>
+        <img class="logo" src="./Asset/logo_1-removebg-preview.png" alt="Lifelink logo">
+        <li class="hideOnMobile"><a href="#" onclick="navigateTo('home')">Home</a></li>
+        <li class="hideOnMobile"><a href="" onclick="navigateTo('about')">About Us</a></li>
+        <li class="hideOnMobile"><a href="#" onclick="navigateTo('images')">Images Gallary</a></li>
+        <li class="hideOnMobile"><a href="#" onclick="navigateTo('blog')">Blog</a></li>
+        <li class="hideOnMobile"><a href="#" onclick="navigateTo('contact')">Contact Us</a></li>
+        <li class="hideOnMobile"><a href="#" onclick="navigateTo('sitemap')">Sitemap</a></li>
+        <a class="hideOnMobile book-now-btn" href="./login.html">Book Now</a>
+        <!-- <button onclick=showSidebar() >&times;</button> -->
+        <li>
+          <button onclick="showSidebar()" aria-label="Open Sidebar">
+            <img src="./Asset/menu-line.svg" alt="Menu Icon">
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Pages -->
+  <section id="home" class=" active section">
+    <div class="contanier">
+      <div class="hero-section">
+        <div class="left">
+          <h2><span>24/7</span> Emergency Ambulance Care with LifeLink</h2>
+          <h4>Saving Lives, One Click Away.</h4>
+          <p>Help / Rescues the Patient in case of the Emergency situation by doing just a click. Lifelink Ambulance
+            comes right in front of the door for help.</p>
+          <h6>Call Our Assistance</h6>
+          <a class="call-num" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+              </path>
+            </svg>+234 811 1759 940</a>
+          <br>
+          <img src="./Asset/ambulance-service-nigeria-image-removebg-preview.png" alt="">
+        </div>
+        <img class="right" src="./Asset/emergency van (5).jpg" alt="Background images">
+
+      </div>
+
+      <!-- ======About Us section====== -->
+      <div class="about-us">
+        <h5>———— <span>Little Story About Us</span> ————</h5>
+        <h2>Our History</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M3.16113 4.46875C5.58508 2.0448 9.44716 1.9355 12.0008 4.14085C14.5528 1.9355 18.4149 2.0448 20.8388 4.46875C23.2584 6.88836 23.3716 10.741 21.1785 13.2947L13.4142 21.0858C12.6686 21.8313 11.4809 21.8652 10.6952 21.1874L10.5858 21.0858L2.82141 13.2947C0.628282 10.741 0.741522 6.88836 3.16113 4.46875ZM4.57534 5.88296C2.86819 7.59011 2.81942 10.3276 4.42902 12.0937L4.57534 12.2469L12 19.6715L17.3026 14.3675L13.7677 10.8327L12.7071 11.8934C11.5355 13.0649 9.636 13.0649 8.46443 11.8934C7.29286 10.7218 7.29286 8.8223 8.46443 7.65073L10.5656 5.54823C8.85292 4.17713 6.37076 4.23993 4.7286 5.73663L4.57534 5.88296ZM13.0606 8.71139C13.4511 8.32086 14.0843 8.32086 14.4748 8.71139L18.7168 12.9533L19.4246 12.2469C21.1819 10.4896 21.1819 7.64032 19.4246 5.88296C17.7174 4.17581 14.9799 4.12704 13.2139 5.73663L13.0606 5.88296L9.87864 9.06494C9.51601 9.42757 9.49011 9.99942 9.80094 10.3919L9.87864 10.4792C10.2413 10.8418 10.8131 10.8677 11.2056 10.5569L11.2929 10.4792L13.0606 8.71139Z">
+          </path>
+        </svg>
+
+        <p>Welcome to <b>LifeLink</b>, where our mission is to connect you with resources, tools, and a supportive
+          community to enhance your well-being and Reduce emergency time by 30%.
+          LifeLink was founded on the principle of making well-being accessible and achievable for all. In today’s
+          fast-paced world, it’s easy to feel disconnected or overwhelmed. LifeLink is here to bridge that gap by
+          offering a safe and inclusive space where you can find valuable insights, expert advice, and Provide
+          real-time
+          monitoring and tracking for improved decision-making.
+        </p>
+        <img src="./Asset/hardy.jpg" alt="Founde's image">
+        <h5><span>(EMD)Emergency Medicine Doctor</span></h5>
+      </div>
+
+      <!-- =====Home page Ambulance gallary==== -->
+      <div class="container-gallary1">
+        <h2>Our Most Requested <span>Ambulance</span></h2>
+        <div id="ambulanceGallery" class="gallery1">
+
+          <div class="ambulance1" data-region="Abia Sate" data-type="ALS" data-price="350">
+            <img src="./Asset/image-gallery/van-2.jpg" alt="Ambulance 2">
+            <p>Name: Ambulance <span>B</span></p>
+            <p>Type: ALS</p>
+            <p>Price: #180,000.00</p>
+            <a href="./ambulance-type.html">Book Now</a>
+          </div>
+
+          <div class="ambulance1" data-region="Lagos State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-16.jpg" alt="Ambulance 3">
+            <p>Name: Ambulance <span>C</span></p>
+            <p>Type: Patient Transport</p>
+            <p>Price: #400,000.00</p>
+            <a href="./ambulance-type.html">Book Now</a>
+          </div>
+
+          <div class="ambulance1" data-region="River State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-9.png" alt="Ambulance 3">
+            <p>Name: Ambulance <span>C</span></p>
+            <p>Type: Patient Transport</p>
+            <p>Price:#150,000.00</p>
+            <a href="./ambulance-type.html">Book Now</a>
+          </div>
+
+          <div class="ambulance1" data-region="Adamanwa State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-15.jpg" alt="Ambulance 3">
+              <p>Name: Ambulance <span>C</span></p>
+                <p>Type: Patient Transport</p>
+                <p>Price: #158,000.00</p>
+                <a href="./ambulance-type.html">Book Now</a>
+
+          </div>
+          <div class="ambulance1" data-region="Lagos State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-5.jpg" alt="Ambulance 3">
+            <p>Name: Ambulance <span>C</span></p>
+                <p>Type: Patient Transport</p>
+                <p>Price:#140,000.00</p>
+                <a href="./ambulance-type.html">Book Now</a>
+
+          </div>
+          <div class="ambulance1" data-region="Ogun State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-15.jpg" alt="Ambulance 3">
+              <p>Name: Ambulance <span>C</span></p>
+                <p>Type: Patient Transport</p>
+                <p>Price: #150,000.00</p>
+                <a href="./ambulance-type.html">Book Now</a>
+
+          </div>
+          <div class="ambulance1" data-region="Abia State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-14.jpg" alt="Ambulance 3">
+              <p>Name: Ambulance <span>C</span></p>
+                <p>Type: Patient Transport</p>
+                <p>Price: #160,000.00</p>
+                <a href="./ambulance-type.html">Book Now</a>
+
+          </div>
+          <div class="ambulance1" data-region="Kaduna State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-19.jpg" alt="Ambulance 3">
+              <p>Name: Ambulance <span>C</span></p>
+                <p>Type: Patient Transport</p>
+                <p>Price: #350,000.00</p>
+                <a href="./ambulance-type.html">Book Now</a>
+
+          </div>
+          <div class="ambulance1" data-region="Lagos State" data-type="Patient Transport" data-price="150">
+            <img src="./Asset/image-gallery/van-13.jpg" alt="Ambulance 4">
+              <p>Name: Ambulance <span>C</span></p>
+                <p>Type: Patient Transport</p>
+                <p>Price: #150,000.00</p>
+                <a href="./ambulance-type.html">Book Now</a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!-- ======== Blog Page ======== -->
+      <div class="container-blog">
+        <h5>—————— <span>Our Ambulance House</span> ——————</h5>
+        <h2>Our Blog Page</h2>
+
+        <div class="blog-posts">
+          <div class="post">
+            <img src="./image/News (1).jpg" alt="Emergency Response Blog Post">
+            <h3>Revolutionizing Emergency</h3>
+            <p>New Protocols for Cardiac Arrest Response Save Lives.</p>
+            <a href="chooper.html">Read More</a>
+          </div>
+
+          <div class="post">
+            <img src="./image/News (3).jpg" alt="Emergency Response Blog Post">
+            <h3>Reducing Response Times with Technology and Innovation</h3>
+            <p>Advancements in Drone Technology for Medical Deliveries.</p>
+            <a href="./chopper2.html">Read More</a>
+          </div>
+          <div class="post">
+            <img src="./image/News (2).jpg" alt="Emergency Response Blog Post">
+            <h3></h3>
+            <p>Telemedicine's Role in Emergency Care During Natural Disasters.</p>
+            <a href="./chopper1.html">Read More</a>
+          </div>
+          <div class="post">
+            <img src="./image/News (4).jpg" alt="Emergency Response Blog Post">
+            <h3></h3>
+            <p>The Rise of Mental Health Emergencies in Urban Areas.</p>
+            <a href="./chopper3.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- =======Enter mail======= -->
+      <div class="enter-mail">
+        <h2>Join Our Newsletter</h2>
+        <p>Enter your email address for our mailing list to keep your self update </p>
+        <div class="enter-mail-search">
+          <input type="text" placeholder="Enter your mail...">
+          <a href="#">Subscribe</a>
+        </div>
+
+
+      </div>
+
+
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ====feedback==== -->
+  <section id="feedback" class="section">
+    <div class="feedback">
+      <h2>Feedback & Testimonials</h2>
+      <p>We value your feedback and are committed to providing the highest level of service. Please fill out the form
+        below to share your experience.</p>
+      <form class="feedback-form" action="/submit-feedback" method="POST">
+        <label for="name">Name (Optional):</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number (Optional):</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="date">Date of Service:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="service">Type of Service Received:</label>
+        <select id="service" name="service">
+          <option value="emergency">Emergency Transport</option>
+          <option value="non-emergency">Non-Emergency Transport</option>
+          <option value="medical-support">Medical Support</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="rating">
+          <h3>Rate Your Experience:</h3>
+          <div class="stars">
+            <input type="radio" name="star" id="star1" value="1">
+            <label for="star1">★</label>
+
+            <input type="radio" name="star" id="star2" value="2">
+            <label for="star2">★</label>
+
+            <input type="radio" name="star" id="star3" value="3">
+            <label for="star3">★</label>
+
+            <input type="radio" name="star" id="star4" value="2">
+            <label for="star4">★</label>
+
+            <input type="radio" name="star" id="star5" value="1">
+            <label for="star5">★</label>
+          </div>
+        </div>
+
+        <label for="comments">Your Comments:</label>
+        <textarea id="comments" name="comments" rows="5" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+      </form>
+
+      <h2>Patient Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial-item">
+          <p><strong>Mercy Ike :</strong> "The paramedics were fast, professional, and provided excellent care
+            during
+            a stressful situation."</p>
+        </div>
+
+        <div class="testimonial-item">
+          <p><strong>Uche Bando :</strong> "I was treated with kindness and respect throughout the entire
+            transport
+            process."</p>
+        </div>
+
+        <div class="testimonial-item">
+          <p><strong>Sarah Ife :</strong> "Excellent service! The team was very supportive and quick to respond."
+          </p>
+        </div>
+
+        <div class="testimonial-item">
+          <p><strong>Emma Chukwu :</strong> "Great experience overall. The staff were friendly and made sure I was
+            comfortable."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  </section>
+
+
+  <!-- ============SPA About Us page=========== -->
+
+  <section id="about" class="section">
+    <section class="company-info">
+      <div class="company-infoText">
+        <h1>About Life Link</h1>
+        <p>
+          Welcome to Life Link, where our mission is to revolutionize emergency medical services through
+          cutting-edge technology and unparalleled care. Founded in 2010, Life Link was established with a
+          mission
+          to revolutionize emergency medical services, Life Link emerged
+          from a vision to transform the traditional ambulance service model into a more efficient,
+          responsive,
+          and patient-centered system. Our name reflects our commitment to connecting people with life-saving
+          care, bridging gaps between emergency response and immediate medical assistance.
+        </p>
+      </div>
+      <div class="company-infoImg">
+        <img src="./assets/staff-workers.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="our-journey">
+      <div class="our-journeyImg">
+        <img src="./assets/staff-workers2.jpg" alt="">
+      </div>
+      <div class="our-journeyText">
+        <h1>Our Journey</h1>
+        <p>
+          Life Link was established with a commitment to enhancing emergency medical services through
+          innovation
+          and technology. Since our inception, we have focused on integrating advanced medical equipment with
+          a
+          user-friendly digital platform, ensuring that our services are accessible and reliable. Over the
+          years,
+          we have grown significantly, both in terms of our capabilities and the regions we serve.
+        </p>
+      </div>
+    </section>
+
+    <section class="top-performing">
+      <div class="top-performingText">
+        <h1>Our Top Performing Ambulances</h1>
+        <p>
+          At Life Link, we take pride in our fleet of e-ambulances, each equipped with advanced medical
+          technology
+          and designed for optimal performance. Some of our top-performing models include:
+        </p>
+
+        <div class="top-performingImg">
+          <div class="ambulance-a">
+            <div class="ambulance-aText">
+              <strong>Ambulance A:</strong>Renowned for its rapid response capabilities and advanced life
+              support systems,
+              Ambulance A
+              is equipped with cutting-edge medical technology and is staffed by highly trained personnel
+              to
+              handle
+              critical emergencies with precision.
+            </div>
+            <img src="./assets/image-gallery/van-14.jpg" alt="" class="topPerformingImg">
+          </div>
+
+          <div class="ambulance-b">
+            <img src="./assets/image-gallery/van-18.jpg" alt="" class="ambulance-bImg">
+
+            <div class="ambulance-bText">
+              <strong>Ambulance B:</strong>Featuring state-of-the-art equipment and enhanced patient
+              monitoring systems, Ambulance
+              B
+              is designed for complex medical situations where advanced care is required. Its
+              sophisticated design
+              ensures that patients receive the highest level of care during transport.
+            </div>
+          </div>
+
+          <div class="ambulance-c">
+            <div class="ambulance-cText">
+              <strong>Ambulance c:</strong>This model excels in providing comprehensive care with
+              specialized equipment for
+              specific
+              medical needs. Ambulance C is ideal for situations requiring specialized interventions and
+              offers
+              exceptional comfort and care for patients.
+            </div>
+            <img src="./assets/image-gallery/van-17.jpg" alt="" class="ambulance-cImg">
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="our-approach">
+      <h1>Our Approach</h1>
+      <div class="our-approach-flex">
+        <img src="./assets/staff-workers3.jpg" alt="">
+        <div class="our-approachText">
+          <p>
+            At Life Link, we leverage advanced technology to enhance our emergency response capabilities.
+            Our
+            fleet
+            of e-ambulances is equipped with the latest medical equipment and technology, ensuring that we
+            deliver
+            top-notch care right from the moment we arrive on the scene. Each ambulance is staffed by highly
+            trained
+            paramedics and emergency medical technicians who are prepared to handle a wide range of medical
+            situations with expertise and compassion.
+
+            Our innovative approach includes real-time data tracking, allowing us to monitor patient
+            conditions
+            and
+            coordinate with medical facilities for seamless care transitions. Our commitment to continuous
+            improvement drives us to explore new technologies and practices that further elevate the quality
+            of
+            our
+            services.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cities">
+      <h1>Cities Where We Serve</h1>
+      <p>
+        Nigeria's premier e-ambulance service, dedicated to providing fast, reliable, and professional emergency
+        medical response across multiple states in the country. We are proud to operate in some of the most
+        populous and diverse regions, ensuring that citizens from urban centers to remote areas have access to
+        critical healthcare services when they need it the most.
+
+        Our state-of-the-art e-ambulance fleet is actively serving the bustling city of Lagos, Nigeria's
+        economic hub, where we navigate the vibrant streets and neighborhoods to bring timely medical attention
+        to millions of residents.
+      </p>
+      <div class="cities-flex">
+        <div class="citiesText">
+          <p>
+            We also extend our life-saving services to <strong>Abia State</strong>, known for its rich culture and
+            commerce, ensuring that the people of the southeast are never too far from emergency care.
+          </p>
+          <p>
+            In the oil-rich state of Rivers, particularly in the capital city of <strong>Port Harcourt</strong>, we
+            provide vital emergency transport and medical support to residents and workers alike, supporting the
+            state's industrial and commercial heartbeat.
+          </p>
+          <p>
+            Further north, <strong>Adamawa State</strong>, with its mountainous terrain and beautiful landscapes,
+            benefits from our e-ambulance services as we strive to reach communities both urban and rural, ensuring
+            no area is too remote for urgent medical assistance.
+          </p>
+          <p>
+            In <strong>Kaduna State</strong>, one of Nigeria's largest and most politically significant regions, our
+            team is dedicated to providing rapid response to its diverse population, bridging gaps in medical
+            emergency services across the state's expansive geography.
+          </p>
+          <p>
+            Similarly, in <strong>Katsina State</strong>, where health services can be spread thin across rural and
+            suburban areas, Life Link steps in to offer reliable, quick access to emergency care, delivering aid to
+            those in need in record time.
+          </p>
+          <p>
+            Finally, in the <strong>Federal Capital Territory (FCT), Abuja</strong>, our e-ambulance services are
+            available around the clock, ensuring that residents, government officials, and visitors in the nation's
+            capital have a trusted emergency medical service ready to respond at a moment's notice.
+          </p>
+        </div>
+        <img src="./assets/map.jpeg" alt="" class="cities-map">
+      </div>
+      <p>
+        At Life Link, we are committed to expanding our reach and continually improving our services to better
+        serve the people of Nigeria, ensuring that no matter where you are—whether in the thriving metropolis of
+        Lagos or the tranquil landscapes of Adamawa—you can rely on us for your emergency medical needs.
+      </p>
+
+    </section>
+
+
+    <section class="our-commitment">
+      <div class="our-commitmentText">
+        <h1>Our Commitment</h1>
+        <p>
+          As we continue to grow, Life Link remains focused on our core values: innovation, reliability, and
+          excellence in patient care. We are constantly expanding our service areas and upgrading our
+          technology
+          to
+          meet the evolving needs of the communities we serve. Our goal is to be the foremost provider of
+          e-ambulance
+          services, setting new standards for emergency medical care and making a difference in every life we
+          touch.
+
+          Thank you for choosing Life Link, where we are dedicated to providing prompt, professional, and
+          compassionate emergency medical services. We are honored to be your trusted partner in health and
+          safety,
+          and we look forward to serving you with excellence for years to come.
+        </p>
+      </div>
+      <img src="./assets/staff-workers2.jpg" alt="">
+    </section>
+  </section>
+
+  <section id="images" class="section">
+    <p>Images Gallary</p>
+    <div class="filter-section">
+      <label for="search">Search by Region, Type, or Cost:</label>
+      <input type="text" id="search" placeholder="Enter region, type, or cost (e.g., Chicago, Advanced, 200)"
+        onkeyup="filterAmbulances()">
+
+      <label for="sort">Sort by:</label>
+      <select id="sort" onchange="sortAmbulances()">
+        <option value="cost">Cost</option>
+        <option value="type">Type</option>
+      </select>
+    </div>
+
+    <ul id="ambulanceList" class="ambulance-list">
+      <div class="ambulance-container">
+        <!-- Search Bar -->
+
+        <div class="searchbar">
+          <div class="filter-section">
+            <label for="search"><span>Search:</span></label>
+            <input type="text" id="search" placeholder="Enter region, type, or cost (e.g., Chicago, Advanced, 200)"
+              onkeyup="filterAmbulances()">
+          </div>
+
+          <div class="sort-filter">
+            <label for="sort"><span>Sort by:</span></label>
+            <select id="sort" onchange="sortAmbulances()">
+              <option value="cost">Cost</option>
+              <option value="type">Type</option>
+            </select>
+          </div>
+
+        </div>
+        <header>
+          <h1>eAmbulance Type, Image Gallery</h1>
+        </header>
+
+        <!--===== Ambulance Gallery ===== -->
+        <div id="ambulanceGallery" class="gallery">
+          <!-- Example ambulance items -->
+          <div class="ambulance ambulance1 ambulance-item" data-region="Abia, Portharcourt, Abuja"
+            data-cost="200000.00 " data-type="Basic">
+            <img src="./assets/image-gallery/van-1.jpg" alt="Ambulance 1" class="ambulance-outside">
+            <img src="./assets/bsl-4.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Basic Ambulance</p>
+                <p><strong>Size:</strong> Medium</p>
+                <p><strong>Cost:</strong> #200000.00</p>
+
+              </span>
+              <span class="text text-after">
+                <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                <p><strong>Region:</strong> Abia, Portharcourt, Abuja</p>
+              </span>
+            </div>
+
+          </div>
+          <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt, 
+            Kaduna, Kastina," data-cost="500000.00" data-type="Premium">
+            <img src="./assets/image-gallery/van-20.jpg" alt="Ambulance 21" class="ambulance-outside">
+            <img src="./assets/air-2.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Premium Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #500000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                  Transport Ventilator</p>
+                <p><strong>Cost:</strong> #500000.00</p>
+                <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance1 ambulance-item" data-region=" Portharcourt, Kastina" data-cost="150000.00 "
+            data-type="Basic">
+            <img src="./assets/image-gallery/van-4.jpg" alt="Ambulance 4" class="ambulance-outside">
+            <img src="./assets/bsl-11.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Basic Ambulance</p>
+                <p><strong>Size:</strong> Small</p>
+                <p><strong>Cost:</strong> #150000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                <p><strong>Region:</strong> Portharcourt, Kastina</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance1 ambulance-item" data-region="Kaduna, Abuja" data-cost="150000.00 "
+            data-type="Basic">
+            <img src="./assets/image-gallery/van-5.jpg" alt="Ambulance 5" class="ambulance-outside">
+            <img src="./assets/bsl-7.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Basic Ambulance</p>
+                <p><strong>Size:</strong> Small</p>
+                <p><strong>Cost:</strong> #150000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                <p><strong>Region:</strong> Kaduna, Abuja</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance1 ambulance-item" data-region="Kaduna,Lagos, Kastina" data-cost="200000.00 "
+            data-type="Basic">
+            <img src="./assets/image-gallery/van-6.jpg" alt="Ambulance 6" class="ambulance-outside">
+            <img src="./assets/bsl-10.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Basic Ambulance</p>
+                <p><strong>Size:</strong> Medium</p>
+                <p><strong>Cost:</strong> #200000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                <p><strong>Region:</strong>Kaduna,Lagos, Kastina</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance1 ambulance-item" data-region="Abuja, Abia, Lagos, Kastina"
+            data-cost="250000.00 " data-type="Basic">
+            <img src="./assets/image-gallery/van-7.jpg" alt="Ambulance 7" class="ambulance-outside">
+            <img src="./assets/bls-1.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Basic Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #250000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                <p><strong>Region:</strong> Abuja, Abia, Lagos, Kastina</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Abia, Kaduna, Portharcourt, Abuja" data-cost="350000.00"
+            data-type="Advanced">
+            <img src="./assets/image-gallery/van-8.jpg" alt="Ambulance 8" class="ambulance-outside">
+            <img src="./assets/bsl-2.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Advanced Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #350000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                <p><strong>Region:</strong>Abia, Kaduna, Portharcourt, Abuja</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Lagos, Abia, Kaduna," data-cost="300000.
+            00" data-type="Advanced">
+            <img src="./assets/image-gallery/van-9.png" alt="Ambulance 9" class="ambulance-outside">
+            <img src="./assets/bsl-3.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Advanced Ambulance</p>
+                <p><strong>Size:</strong> Medium</p>
+                <p><strong>Cost:</strong> #300000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                <p><strong>Region:</strong> Lagos, Abia, Kaduna,</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance1 ambulance-item" data-region="Abia, Kaduna, Portharcourt, Kastina"
+            data-cost="250000.00 " data-type="Basic">
+            <img src="./assets/image-gallery/van-2.jpg" alt="Ambulance 2" class="ambulance-outside">
+            <img src="./assets/bsl-5.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Basic Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #250000.00</p>
+              </span>
+              <span class="text text-after">
+                <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                <p><strong>Region:</strong> Abia, Kaduna, Portharcourt, Kastina</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Lagos, Kaduna, Portharcourt, Abuja" data-cost="350000.00"
+            data-type="Advanced">
+            <img src="./assets/image-gallery/van-14.jpg" alt="Ambulance 14" class="ambulance-outside">
+            <img src="./assets/bsl-12.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Advanced Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #350000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                <p><strong>Region:</strong> Lagos Kaduna, Portharcourt, Abuja</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Lagos, Abuja, Kaduna, Kastina," data-cost="400000.00"
+            data-type="Premium">
+            <img src="./assets/image-gallery/van-16.jpg" alt="Ambulance 16" class="ambulance-outside">
+            <img src="./assets/air-2.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Premium Ambulance</p>
+                <p><strong>Size:</strong> Small</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Stretcher, oxygen cylinder. Defibrillator, Artificial airway
+                  devices, Transport Ventilator</p>
+                <p><strong>Specialization:</strong> A/C, ICU</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+                <p><strong>Region:</strong> Lagos, Abuja, Kaduna, Kastina
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Lagos, Abia, Kaduna,Abuja" data-cost="350000.00"
+            data-type="Advanced">
+            <img src="./assets/image-gallery/van-10.jpg" alt="Ambulance 10" class="ambulance-outside">
+            <img src="./assets/bsl-8.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Advanced Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #350000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                <p><strong>Region:</strong> Lagos, Abia, Kaduna,Abuja</p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance1 ambulance-item" data-region="Abia, Lagos" data-cost="150000.00 "
+            data-type="Basic">
+            <img src="./assets/image-gallery/van-3-.png" alt="Ambulance 3" class="ambulance-outside">
+            <img src="./assets/bsl-9.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Basic Ambulance</p>
+                <p><strong>Size:</strong> Small</p>
+                <p><strong>Cost:</strong> #150000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> First aid kit, stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> A/C, No-ICU</p>
+
+                <p><strong>Region:</strong> Abia, Lagos</p>
+              </span>
+            </div>
+
+          </div>
+          <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Portharcourt, Kaduna"
+            data-cost="400000.00" data-type="Premium">
+            <img src="./assets/image-gallery/van-12.jpg" alt="Ambulance 12" class="ambulance-outside">
+            <img src="./assets/air-1.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Premium Ambulance</p>
+                <p><strong>Size:</strong>Small</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Stretcher, oxygen cylinder, Defibrillator, Artificial airway
+                  devices, Transport Ventilator</p>
+                <p><strong>Specialization:</strong> A/C, ICU</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+                <p><strong>Region:</strong> Abia State, Lagos, Portharcourt, Kaduna,
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Lagos, Abia, Kaduna, Portharcourt" data-cost="350000.00"
+            data-type="Advanced">
+            <img src="./assets/image-gallery/van-13.jpg" alt="Ambulance 13" class="ambulance-outside">
+            <img src="./assets/bsl-13.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Advanced Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #350000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                <p><strong>Region:</strong> Lagos, Abia, Kaduna, Portharcourt</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="ambulance ambulance-item" data-region="Lagos, Portharcourt, Abuja" data-cost="300000.00"
+            data-type="Advanced">
+            <img src="./assets/image-gallery/van-15.jpg" alt="Ambulance 15" class="ambulance-outside">
+            <img src="./assets/bsl-14.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Advanced Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #300000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                <p><strong>Region:</strong> Lagos,Portharcourt, Abuja</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt, 
+            Kaduna, Kastina," data-cost="500000.00" data-type="Premium">
+            <img src="./assets/image-gallery/van-20.jpg" alt="Ambulance 17" class="ambulance-outside">
+            <img src="./assets/air-3.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Premium Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #500000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Stretcher, oxygen cylinder, Defibrillator, Artificial airway
+                  devices, Transport Ventilator</p>
+                <p><strong>Specialization:</strong> Non-A/C, Non-ICU</p>
+                <p><strong>Cost:</strong> #500000.00</p>
+                <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Abia State, Portharcourt, Kaduna, 
+            Kastina," data-cost="400000.00" data-type="Premium">
+            <img src="./assets/image-gallery/van-19.jpg" alt="Ambulance 18" class="ambulance-outside">
+            <img src="./assets/air-4.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong>Premium Ambulance</p>
+                <p><strong>Size:</strong> Small</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                  Transport Ventilator</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+                <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt, 
+            Kaduna, Kastina," data-cost="500000.00" data-type="Premium">
+            <img src="./assets/image-gallery/van-18.jpg" alt="Ambulance 19" class="ambulance-outside">
+            <img src="./assets/air-5.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Premium Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #500000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                  Transport Ventilator</p>
+                <p><strong>Cost:</strong> #500000.00</p>
+                <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt, Kaduna, Kastina, Adamawa
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Abia State, Lagos, Abuja, Portharcourt,"
+            data-cost="400000.00" data-type="Premium">
+            <img src="./assets/image-gallery/van-17.jpg" alt="Ambulance 20" class="ambulance-outside">
+            <img src="./assets/air-6.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Premium Ambulance</p>
+                <p><strong>Size:</strong> Small</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Stretcher, oxygen cylinder</p>
+                <p><strong>Specialization:</strong> Non-A/C, Non-ICU, Defibrillator, Artificial airway devices,
+                  Transport Ventilator</p>
+                <p><strong>Cost:</strong> #400000.00</p>
+                <p><strong>Region:</strong> Abia State, Lagos, Abuja, Portharcourt,
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="ambulance ambulance-item" data-region="Lagos, Abia, Portharcourt, Abuja" data-cost="350000.00"
+            data-type="Advanced">
+            <img src="./assets/image-gallery/van-11.webp" alt="Ambulance 11" class="ambulance-outside">
+            <img src="./assets/bsl-6.jpg" alt="" class="ambulance-inside">
+            <div class="text-hover">
+              <span class="text ambulance-text">
+                <p><strong>Type:</strong> Advanced Ambulance</p>
+                <p><strong>Size:</strong> Large</p>
+                <p><strong>Cost:</strong> #350000.00</p>
+              </span>
+              <span class="text text-after">
+
+                <p><strong>Equipment:</strong> Ventilator, defibrillator, oxygen cylinder, ECG machine</p>
+                <p><strong>Specialization:</strong> Non-A/C, ICU</p>
+                <p><strong>Region:</strong> Lagos, Abia,Portharcourt, Abuja</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+  <!-- -----------Feedback---------- -->
+  <section id="feedback" class="section">
+    <div class="feedback">
+      <h2>Feedback & Testimonials</h2>
+      <p>We value your feedback and are committed to providing the highest level of service. Please fill out the form
+        below to share your experience.</p>
+      <form class="feedback-form" action="/submit-feedback" method="POST">
+        <label for="name">Name (Optional):</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number (Optional):</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="date">Date of Service:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="service">Type of Service Received:</label>
+        <select id="service" name="service">
+          <option value="emergency">Emergency Transport</option>
+          <option value="non-emergency">Non-Emergency Transport</option>
+          <option value="medical-support">Medical Support</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="rating">
+          <h3>Rate Your Experience:</h3>
+          <div class="stars">
+            <input type="radio" name="star" id="star1" value="1">
+            <label for="star1">★</label>
+
+            <input type="radio" name="star" id="star2" value="2">
+            <label for="star2">★</label>
+
+            <input type="radio" name="star" id="star3" value="3">
+            <label for="star3">★</label>
+
+            <input type="radio" name="star" id="star4" value="2">
+            <label for="star4">★</label>
+
+            <input type="radio" name="star" id="star5" value="1">
+            <label for="star5">★</label>
+          </div>
+        </div>
+
+        <label for="comments">Your Comments:</label>
+        <textarea id="comments" name="comments" rows="5" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+      </form>
+
+      <h2>Patient Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial-item">
+          <p><strong>Mercy Ike.:</strong> "The paramedics were fast, professional, and provided excellent care
+            during
+            a stressful situation."</p>
+        </div>
+
+        <div class="testimonial-item">
+          <p><strong>Uche Bando.:</strong> "I was treated with kindness and respect throughout the entire
+            transport
+            process."</p>
+        </div>
+
+        <div class="testimonial-item">
+          <p><strong>Sarah Ife.:</strong> "Excellent service! The team was very supportive and quick to respond."
+          </p>
+        </div>
+
+        <div class="testimonial-item">
+          <p><strong>Emma Chukwu.:</strong> "Great experience overall. The staff were friendly and made sure I was
+            comfortable."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section">
+    <h2 class="blog-font">Our Blog Page</h2>
+
+    <div class="blog-posts">
+      <div class="post" onclick="openModal('post1')">
+        <img src="./image/News (1).jpg" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>New Protocols for Cardiac Arrest Response Save Lives.</p>
+        <a href="chooper.html">Read More</a>
+      </div>
+      <div class="post" onclick="openModal('post2')">
+        <img src="./image/News (2).jpg" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>Telemedicine's Role in Emergency Care During Natural Disasters.</p>
+        <a href="./chopper1.html">Read More</a>
+      </div>
+      <div class="post" onclick="openModal('post3')">
+        <img src="./image/News (3).jpg" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>Advancements in Drone Technology for Medical Deliveries.</p>
+        <a href="./chopper2.html">Read More</a>
+      </div>
+      <div class="post" onclick="openModal('post4')">
+        <img src="./image/News (4).jpg" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>The Rise of Mental Health Emergencies in Urban Areas.</p>
+        <a href="./chopper3.html">Read More</a>
+      </div>
+      <div class="post" onclick="openModal('post5')">
+        <img src="./image/News (5).webp" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>Innovative Use of AI in Emergency Triage.</p>
+        <a href="./chopper4.html">Read More</a>
+      </div>
+      <div class="post" onclick="openModal('post6')">
+        <img src="./image/News (6).jpg" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>Community Initiatives to Enhance Emergency Preparedness.</p>
+        <a href="./chopper5.html">Read More</a>
+      </div>
+      <div class="post" onclick="openModal('post7')">
+        <img src="./image/News (7).jpg" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>Challenges Faced by Ambulance Services During Peak Seasons.</p>
+        <a href="./chopper6.html">Read More</a>
+      </div>
+      <div class="post" onclick="openModal('post8')">
+        <img src="./image/news(8).jpg" alt="Emergency Response Blog Post">
+        <h2>Headline</h2>
+        <p>The Impact of COVID-19 on Emergency Medical Services.</p>
+        <a href="./chopper7.html">Read More</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <div id="modal" class="modal">
+      <div class="modal-content">
+           <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+      </div>
+  </div> -->
+
+  <!-- ----------Footer section---------- 
+
+  <div class="footer-images1">
+    <img class="plantpalace-logo-2" src="./Asset/logo_1-removebg-preview.png" alt="">
+
+    <div class="footer-section-services1">
+      <h3>Our Services</h3>
+
+      <div class="services1">
+        <li><a href="/emergency-services">Emergency Services.</a></li>
+        <li><a href="/patient-transport">Patient Transport.</a></li>
+        <li><a href="/medical-assistance">Medical Assistance.</a></li>
+        <li><a href="/ambulance-booking">Ambulance Booking.</a></li>
+      </div>
+    </div>
+
+    <h5>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M6 19H18V9.15745L12 3.7029L6 9.15745V19ZM19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM7.5 13H9.5C9.5 14.3807 10.6193 15.5 12 15.5C13.3807 15.5 14.5 14.3807 14.5 13H16.5C16.5 15.4853 14.4853 17.5 12 17.5C9.51472 17.5 7.5 15.4853 7.5 13Z">
+        </path>
+      </svg> Address:
+      PO Box 16122 Collins Street
+      West Victoria 8007, Nigeria
+    </h5>
+    <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z">
+        </path>
+      </svg> Email:
+
+      Contact@Plantpalace.com
+    </h5>
+    <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M19.9381 8H21C22.1046 8 23 8.89543 23 10V14C23 15.1046 22.1046 16 21 16H19.9381C19.446 19.9463 16.0796 23 12 23V21C15.3137 21 18 18.3137 18 15V9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9V16H3C1.89543 16 1 15.1046 1 14V10C1 8.89543 1.89543 8 3 8H4.06189C4.55399 4.05369 7.92038 1 12 1C16.0796 1 19.446 4.05369 19.9381 8ZM3 10V14H4V10H3ZM20 10V14H21V10H20ZM7.75944 15.7849L8.81958 14.0887C9.74161 14.6662 10.8318 15 12 15C13.1682 15 14.2584 14.6662 15.1804 14.0887L16.2406 15.7849C15.0112 16.5549 13.5576 17 12 17C10.4424 17 8.98882 16.5549 7.75944 15.7849Z">
+        </path>
+      </svg> customer care:
+
+      (+234) 811 1759 940
+    </h5>
+
+  </div>
+  <div class="Copyright1">
+    <h6>Copyright © 2017 by wisdomTheme All Rights Reserved</h6>
+    <h6>Payment Options:
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M8.49626 20.6667H10.0474L10.5852 17.2912C10.8012 15.93 11.9747 14.9253 13.3545 14.9253H13.8545C16.5322 14.9253 17.915 13.9421 18.4055 11.4224C18.6134 10.3564 18.5222 9.69183 18.2339 9.32047C17.0272 12.3744 14.4449 13.4793 11.2725 13.4793H10.3878C10.004 13.4793 9.59454 13.6889 9.53611 14.0602L8.49626 20.6667ZM3.55247 20.3733C3.21381 20.3733 2.95514 20.0713 3.00781 19.736L5.68247 2.776C5.75314 2.32933 6.13847 2 6.59047 2H13.0138C15.2265 2 16.9558 2.46733 17.9131 3.558C18.783 4.54853 19.0364 5.64237 18.7846 7.25001C19.1438 7.44133 19.4518 7.67467 19.6998 7.956C20.5185 8.88867 20.6785 10.216 20.3685 11.8053C19.6278 15.6107 17.0925 16.9253 13.8545 16.9253H13.3545C12.9591 16.9253 12.6225 17.214 12.5605 17.6047L11.8578 21.988C11.7958 22.3787 11.4591 22.6667 11.0638 22.6667H6.72114C6.42447 22.6667 6.19781 22.402 6.24381 22.1093L6.51781 20.3733H3.55247ZM10.3878 11.4793H11.2725C14.462 11.4793 16.1671 10.2667 16.7549 7.2501C16.7744 7.14856 16.7919 7.04727 16.8086 6.94101C16.9746 5.88187 16.8586 5.38808 16.4104 4.87773C15.9451 4.34763 14.8073 4 13.0138 4H7.51416L5.24742 18.3733H6.80845L7.53821 13.7452L7.54562 13.7463C7.84632 12.4296 9.0169 11.4793 10.3878 11.4793Z">
+        </path>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12.001 18.2942C10.916 18.9333 9.65132 19.3 8.30098 19.3C4.2693 19.3 1.00098 16.0316 1.00098 12C1.00098 7.96827 4.2693 4.69995 8.30098 4.69995C9.65132 4.69995 10.916 5.06659 12.001 5.70575C13.0859 5.06659 14.3506 4.69995 15.701 4.69995C19.7327 4.69995 23.001 7.96827 23.001 12C23.001 16.0316 19.7327 19.3 15.701 19.3C14.3506 19.3 13.0859 18.9333 12.001 18.2942ZM13.7027 16.9103C14.3194 17.1615 14.994 17.3 15.701 17.3C18.6281 17.3 21.001 14.9271 21.001 12C21.001 9.07284 18.6281 6.69995 15.701 6.69995C14.994 6.69995 14.3194 6.83837 13.7027 7.08957C14.8821 8.38619 15.601 10.1091 15.601 12C15.601 13.8908 14.8821 15.6137 13.7027 16.9103ZM10.2992 7.08957C9.68255 6.83837 9.00793 6.69995 8.30098 6.69995C5.37387 6.69995 3.00098 9.07284 3.00098 12C3.00098 14.9271 5.37387 17.3 8.30098 17.3C9.00793 17.3 9.68255 17.1615 10.2992 16.9103C9.11986 15.6137 8.40098 13.8908 8.40098 12C8.40098 10.1091 9.11986 8.38619 10.2992 7.08957ZM12.001 8.20521C11.0139 9.16781 10.401 10.5123 10.401 12C10.401 13.4876 11.0139 14.8321 12.001 15.7947C12.9881 14.8321 13.601 13.4876 13.601 12C13.601 10.5123 12.9881 9.16781 12.001 8.20521Z">
+        </path>
+      </svg>
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M21.2595 13.9898C20.9852 15.4006 18.8033 16.9446 16.2974 17.2439C14.9907 17.3998 13.7041 17.5431 12.3321 17.4802C10.0885 17.3774 8.31809 16.9446 8.31809 16.9446C8.31809 17.163 8.33156 17.371 8.3585 17.5655C8.65019 19.7797 10.5541 19.9124 12.3576 19.9742C14.1779 20.0365 15.7987 19.5254 15.7987 19.5254L15.8735 21.1711C15.8735 21.1711 14.6003 21.8548 12.3321 21.9805C11.0814 22.0493 9.52849 21.9491 7.71973 21.4703C3.79684 20.432 3.12219 16.2504 3.01896 12.0074C2.98749 10.7477 3.00689 9.55981 3.00689 8.56632C3.00689 4.22771 5.84955 2.95599 5.84955 2.95599C7.2829 2.29772 9.74238 2.0209 12.2993 2H12.3621C14.919 2.0209 17.3801 2.29772 18.8133 2.95599C18.8133 2.95599 21.6559 4.22771 21.6559 8.56632C21.6559 8.56632 21.6916 11.7674 21.2595 13.9898ZM18.3029 8.9029C18.3029 7.82924 18.0295 6.97604 17.4805 6.34482C16.9142 5.71359 16.1726 5.39001 15.2522 5.39001C14.187 5.39001 13.3805 5.79937 12.8473 6.61819L12.3288 7.48723L11.8104 6.61819C11.2771 5.79937 10.4706 5.39001 9.40554 5.39001C8.485 5.39001 7.74344 5.71359 7.17719 6.34482C6.62807 6.97604 6.3547 7.82924 6.3547 8.9029V14.1562H8.43597V9.05731C8.43597 7.98246 8.88822 7.4369 9.79281 7.4369C10.793 7.4369 11.2944 8.08408 11.2944 9.36376V12.1547H13.3634V9.36376C13.3634 8.08408 13.8646 7.4369 14.8648 7.4369C15.7694 7.4369 16.2216 7.98246 16.2216 9.05731V14.1562H18.3029V8.9029Z">
+        </path>
+      </svg>
+    </h6>
+    <h6>Follow us: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
+        </path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z">
+        </path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z">
+        </path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M13.3717 2.09442C8.42512 1.41268 3.73383 4.48505 2.38064 9.29256C1.02745 14.1001 3.42711 19.1692 8.00271 21.1689C7.94264 20.4008 7.99735 19.628 8.16502 18.8761C8.34964 18.0374 9.46121 13.4132 9.46121 13.4132C9.23971 12.9173 9.12893 12.379 9.13659 11.8359C9.13659 10.3509 9.99353 9.24295 11.0597 9.24295C11.4472 9.23718 11.8181 9.40028 12.0758 9.68981C12.3335 9.97934 12.4526 10.3667 12.402 10.751C12.402 11.6512 11.8236 13.0131 11.5228 14.2903C11.4014 14.7656 11.5131 15.2703 11.8237 15.65C12.1343 16.0296 12.6069 16.2389 13.0967 16.2139C14.9944 16.2139 16.2675 13.7825 16.2675 10.9126C16.2675 8.71205 14.8098 7.0655 12.1243 7.0655C10.826 7.01531 9.56388 7.4996 8.63223 8.40543C7.70057 9.31126 7.18084 10.5595 7.19423 11.859C7.16563 12.5722 7.39566 13.2717 7.84194 13.8287C8.01361 13.9564 8.07985 14.1825 8.00425 14.3827C7.9581 14.5673 7.84194 15.0059 7.79578 15.1675C7.77632 15.278 7.70559 15.3728 7.60516 15.4228C7.50473 15.4729 7.38651 15.4724 7.28654 15.4214C5.9019 14.8674 5.24957 13.3439 5.24957 11.6051C5.24957 8.75822 7.63424 5.3497 12.4036 5.3497C16.1998 5.3497 18.723 8.1273 18.723 11.0972C18.723 15.0059 16.5468 17.9451 13.3298 17.9451C12.3526 17.9761 11.4273 17.5061 10.8759 16.6986C10.8759 16.6986 10.2974 19.0146 10.1835 19.4531C9.95101 20.2099 9.60779 20.9281 9.16505 21.5844C10.0877 21.8643 11.0471 22.0044 12.0113 22C14.6636 22.0017 17.2078 20.9484 19.0829 19.072C20.958 17.1957 22.0099 14.6504 22.0069 11.9975C22.004 7.00306 18.3183 2.77616 13.3717 2.09442Z">
+        </path>
+      </svg>
+
+    </h6>
+  </div>
+
+
+  </div>-->
+  </section>
+
+
+  <section id="contact" class="section">
+    <!-- =====Contact page===== -->
+    <div class="contact-page">
+      <h2>Contact us</h2>
+      <div class="container-contact">
+
+        <div class="right-contact">
+          <form>
+            <div class="name">
+              <label for="text">Name</label>
+              <input type="text" placeholder="first name..." />
+              <input type="text" placeholder="last name..." />
+            </div>
+
+            <div class="email">
+              <label for="text">Email</label>
+              <input type="text" placeholder="enter your email..." />
+            </div>
+
+            <div class="password">
+              <label for="text">Password</label>
+              <input type="text" placeholder="enter your password..." />
+            </div>
+
+            <div class="message">
+              <label for="text">Message</label>
+              <textarea class="enter-comment" placeholder="Please enter your comment..." name="" id=""></textarea>
+            </div>
+          </form>
+          <div class="summit">
+            <a href="#">Submit
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="currentColor">
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="img-left"><img src="./Asset/contact us 2.jpg" alt="" /></div>
+
+      </div>
+
+    </div>
+    <!-- ------fo -->
+    <footer class="footer1">
+
+      <div class="footer-section1">
+        <div class="footer-images1">
+          <img class="plantpalace-logo-2" src="./Asset/logo_1-removebg-preview.png" alt="">
+
+          <div class="footer-section-services1">
+            <h3>Our Services</h3>
+
+            <div class="services1">
+              <li><a href="/emergency-services">Emergency Services.</a></li>
+              <li><a href="/patient-transport">Patient Transport.</a></li>
+              <li><a href="/medical-assistance">Medical Assistance.</a></li>
+              <li><a href="/ambulance-booking">Ambulance Booking.</a></li>
+            </div>
+          </div>
+
+          <h5>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6 19H18V9.15745L12 3.7029L6 9.15745V19ZM19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM7.5 13H9.5C9.5 14.3807 10.6193 15.5 12 15.5C13.3807 15.5 14.5 14.3807 14.5 13H16.5C16.5 15.4853 14.4853 17.5 12 17.5C9.51472 17.5 7.5 15.4853 7.5 13Z">
+              </path>
+            </svg> Address:
+            PO Box 16122 Collins Street
+            West Victoria 8007, Nigeria
+          </h5>
+          <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z">
+              </path>
+            </svg> Email:
+
+            Contact@Plantpalace.com
+          </h5>
+          <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.9381 8H21C22.1046 8 23 8.89543 23 10V14C23 15.1046 22.1046 16 21 16H19.9381C19.446 19.9463 16.0796 23 12 23V21C15.3137 21 18 18.3137 18 15V9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9V16H3C1.89543 16 1 15.1046 1 14V10C1 8.89543 1.89543 8 3 8H4.06189C4.55399 4.05369 7.92038 1 12 1C16.0796 1 19.446 4.05369 19.9381 8ZM3 10V14H4V10H3ZM20 10V14H21V10H20ZM7.75944 15.7849L8.81958 14.0887C9.74161 14.6662 10.8318 15 12 15C13.1682 15 14.2584 14.6662 15.1804 14.0887L16.2406 15.7849C15.0112 16.5549 13.5576 17 12 17C10.4424 17 8.98882 16.5549 7.75944 15.7849Z">
+              </path>
+            </svg> customer care:
+
+            (+234) 811 1759 940
+          </h5>
+
+        </div>
+        <div class="Copyright1">
+          <h6>Copyright © 2017 by wisdomTheme All Rights Reserved</h6>
+          <h6>Payment Options:
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M8.49626 20.6667H10.0474L10.5852 17.2912C10.8012 15.93 11.9747 14.9253 13.3545 14.9253H13.8545C16.5322 14.9253 17.915 13.9421 18.4055 11.4224C18.6134 10.3564 18.5222 9.69183 18.2339 9.32047C17.0272 12.3744 14.4449 13.4793 11.2725 13.4793H10.3878C10.004 13.4793 9.59454 13.6889 9.53611 14.0602L8.49626 20.6667ZM3.55247 20.3733C3.21381 20.3733 2.95514 20.0713 3.00781 19.736L5.68247 2.776C5.75314 2.32933 6.13847 2 6.59047 2H13.0138C15.2265 2 16.9558 2.46733 17.9131 3.558C18.783 4.54853 19.0364 5.64237 18.7846 7.25001C19.1438 7.44133 19.4518 7.67467 19.6998 7.956C20.5185 8.88867 20.6785 10.216 20.3685 11.8053C19.6278 15.6107 17.0925 16.9253 13.8545 16.9253H13.3545C12.9591 16.9253 12.6225 17.214 12.5605 17.6047L11.8578 21.988C11.7958 22.3787 11.4591 22.6667 11.0638 22.6667H6.72114C6.42447 22.6667 6.19781 22.402 6.24381 22.1093L6.51781 20.3733H3.55247ZM10.3878 11.4793H11.2725C14.462 11.4793 16.1671 10.2667 16.7549 7.2501C16.7744 7.14856 16.7919 7.04727 16.8086 6.94101C16.9746 5.88187 16.8586 5.38808 16.4104 4.87773C15.9451 4.34763 14.8073 4 13.0138 4H7.51416L5.24742 18.3733H6.80845L7.53821 13.7452L7.54562 13.7463C7.84632 12.4296 9.0169 11.4793 10.3878 11.4793Z">
+              </path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.001 18.2942C10.916 18.9333 9.65132 19.3 8.30098 19.3C4.2693 19.3 1.00098 16.0316 1.00098 12C1.00098 7.96827 4.2693 4.69995 8.30098 4.69995C9.65132 4.69995 10.916 5.06659 12.001 5.70575C13.0859 5.06659 14.3506 4.69995 15.701 4.69995C19.7327 4.69995 23.001 7.96827 23.001 12C23.001 16.0316 19.7327 19.3 15.701 19.3C14.3506 19.3 13.0859 18.9333 12.001 18.2942ZM13.7027 16.9103C14.3194 17.1615 14.994 17.3 15.701 17.3C18.6281 17.3 21.001 14.9271 21.001 12C21.001 9.07284 18.6281 6.69995 15.701 6.69995C14.994 6.69995 14.3194 6.83837 13.7027 7.08957C14.8821 8.38619 15.601 10.1091 15.601 12C15.601 13.8908 14.8821 15.6137 13.7027 16.9103ZM10.2992 7.08957C9.68255 6.83837 9.00793 6.69995 8.30098 6.69995C5.37387 6.69995 3.00098 9.07284 3.00098 12C3.00098 14.9271 5.37387 17.3 8.30098 17.3C9.00793 17.3 9.68255 17.1615 10.2992 16.9103C9.11986 15.6137 8.40098 13.8908 8.40098 12C8.40098 10.1091 9.11986 8.38619 10.2992 7.08957ZM12.001 8.20521C11.0139 9.16781 10.401 10.5123 10.401 12C10.401 13.4876 11.0139 14.8321 12.001 15.7947C12.9881 14.8321 13.601 13.4876 13.601 12C13.601 10.5123 12.9881 9.16781 12.001 8.20521Z">
+              </path>
+            </svg>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21.2595 13.9898C20.9852 15.4006 18.8033 16.9446 16.2974 17.2439C14.9907 17.3998 13.7041 17.5431 12.3321 17.4802C10.0885 17.3774 8.31809 16.9446 8.31809 16.9446C8.31809 17.163 8.33156 17.371 8.3585 17.5655C8.65019 19.7797 10.5541 19.9124 12.3576 19.9742C14.1779 20.0365 15.7987 19.5254 15.7987 19.5254L15.8735 21.1711C15.8735 21.1711 14.6003 21.8548 12.3321 21.9805C11.0814 22.0493 9.52849 21.9491 7.71973 21.4703C3.79684 20.432 3.12219 16.2504 3.01896 12.0074C2.98749 10.7477 3.00689 9.55981 3.00689 8.56632C3.00689 4.22771 5.84955 2.95599 5.84955 2.95599C7.2829 2.29772 9.74238 2.0209 12.2993 2H12.3621C14.919 2.0209 17.3801 2.29772 18.8133 2.95599C18.8133 2.95599 21.6559 4.22771 21.6559 8.56632C21.6559 8.56632 21.6916 11.7674 21.2595 13.9898ZM18.3029 8.9029C18.3029 7.82924 18.0295 6.97604 17.4805 6.34482C16.9142 5.71359 16.1726 5.39001 15.2522 5.39001C14.187 5.39001 13.3805 5.79937 12.8473 6.61819L12.3288 7.48723L11.8104 6.61819C11.2771 5.79937 10.4706 5.39001 9.40554 5.39001C8.485 5.39001 7.74344 5.71359 7.17719 6.34482C6.62807 6.97604 6.3547 7.82924 6.3547 8.9029V14.1562H8.43597V9.05731C8.43597 7.98246 8.88822 7.4369 9.79281 7.4369C10.793 7.4369 11.2944 8.08408 11.2944 9.36376V12.1547H13.3634V9.36376C13.3634 8.08408 13.8646 7.4369 14.8648 7.4369C15.7694 7.4369 16.2216 7.98246 16.2216 9.05731V14.1562H18.3029V8.9029Z">
+              </path>
+            </svg>
+          </h6>
+          <h6>Follow us: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
+              </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z">
+              </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z">
+              </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.3717 2.09442C8.42512 1.41268 3.73383 4.48505 2.38064 9.29256C1.02745 14.1001 3.42711 19.1692 8.00271 21.1689C7.94264 20.4008 7.99735 19.628 8.16502 18.8761C8.34964 18.0374 9.46121 13.4132 9.46121 13.4132C9.23971 12.9173 9.12893 12.379 9.13659 11.8359C9.13659 10.3509 9.99353 9.24295 11.0597 9.24295C11.4472 9.23718 11.8181 9.40028 12.0758 9.68981C12.3335 9.97934 12.4526 10.3667 12.402 10.751C12.402 11.6512 11.8236 13.0131 11.5228 14.2903C11.4014 14.7656 11.5131 15.2703 11.8237 15.65C12.1343 16.0296 12.6069 16.2389 13.0967 16.2139C14.9944 16.2139 16.2675 13.7825 16.2675 10.9126C16.2675 8.71205 14.8098 7.0655 12.1243 7.0655C10.826 7.01531 9.56388 7.4996 8.63223 8.40543C7.70057 9.31126 7.18084 10.5595 7.19423 11.859C7.16563 12.5722 7.39566 13.2717 7.84194 13.8287C8.01361 13.9564 8.07985 14.1825 8.00425 14.3827C7.9581 14.5673 7.84194 15.0059 7.79578 15.1675C7.77632 15.278 7.70559 15.3728 7.60516 15.4228C7.50473 15.4729 7.38651 15.4724 7.28654 15.4214C5.9019 14.8674 5.24957 13.3439 5.24957 11.6051C5.24957 8.75822 7.63424 5.3497 12.4036 5.3497C16.1998 5.3497 18.723 8.1273 18.723 11.0972C18.723 15.0059 16.5468 17.9451 13.3298 17.9451C12.3526 17.9761 11.4273 17.5061 10.8759 16.6986C10.8759 16.6986 10.2974 19.0146 10.1835 19.4531C9.95101 20.2099 9.60779 20.9281 9.16505 21.5844C10.0877 21.8643 11.0471 22.0044 12.0113 22C14.6636 22.0017 17.2078 20.9484 19.0829 19.072C20.958 17.1957 22.0099 14.6504 22.0069 11.9975C22.004 7.00306 18.3183 2.77616 13.3717 2.09442Z">
+              </path>
+            </svg>
+
+          </h6>
+        </div>
+
+      </div>
+      </div>
+  </section>
+
+  <section id="sitemap" class="section">
+
+    <div class="site-map">
+      <ul>
+        <h2><a href="">Home</a></h2>
+        <h2><a href="">About Us</a></h2>
+
+        <li><a href="">Company info.</a></li>
+        <li><a href="">Our journey.</a></li>
+        <li><a href="">Top performing ambulances.</a></li>
+        <li><a href="">Our approch.</a></li>
+        <li><a href="">Cities map.</a></li>
+        <li><a href="">Our commitment.</a></li>
+        <h2><a href="">Images gallary</a></h2>
+        <li><a href="">Ambulance images.</a></li>
+        <h2><a href="">Feed back</a></h2>
+        <li><a href="">your feedback.</a></li>
+        <li><a href="">Patient feedback.</a></li>
+        <h2><a href="">Contact us</a></h2>
+        <li><a href="">contact</a></li>
+
+
+      </ul>
+
+
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
