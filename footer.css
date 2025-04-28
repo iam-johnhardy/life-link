@@ -1,44 +1,80 @@
-/* ---====footer====--- */
 .footer-images1 {
+  background-color: rgba(51, 51, 51,0.4);
   color: #000;
   padding: 20px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom:1px solid rgba(157, 151, 151, 0.9) ;
+  border-bottom:1px solid rgba(157, 151, 151, 0.9);
   font-family: "Dancing Script", system-ui;
+  height: 30vh;
+  outline:2px solid red;
+
 }
 
-.footer-section{
-  background-color: rgba(51, 51, 51,0.4);
+.footer-section-services1 h3{
+  text-align: center;
+  font-size: 30px;
+
+}
+.footer-section-services1 h3 span{
+  color: #E90043;
+
 }
 
 .plantpalace-logo-2 {
-  width: 100px;
+  width: 150px;
 }
 
-.Copyright {
+.services1 {
+  font-size: 17px;
+ 
+} 
+
+.Copyright1 {
   color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  margin: auto 10px;
-  height: 20px;
+  padding: 5px;
+  margin: auto 15px;
   font-size: 20px;
   font-family: "Dancing Script", system-ui;
 }
 
-.Copyright svg{
-  width: 30px;
-  margin-left: 10px;
-  background-color: #fff;
+.Copyright1 svg{
+  width: 15px;
 }
 
-.services {
-  font-size: 12px;
-  display: flex;
-  text-align: center;
-  padding:0 0 15px 10px;
-  gap: 10px;
+.footer-images1 h5 svg{
+  width: 30px;
+ 
+
 }
+
+@media (max-width: 768px){
+  .footer-images1 {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    height: 45vh;
+  }
+  .footer-section-services1 h3{
+    text-align: center;
+    font-size: 20px;
+  
+  }
+  .Copyright1 {
+    font-size: 5px;
+
+  }
+  .Copyright1 svg{
+    width: 10px;
+  }
+  
+
+
+
+}
+
+

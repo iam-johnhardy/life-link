@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/lifelink.css">
-  <link rel="stylesheet" href="/footer.css">
+  <!-- <link rel="stylesheet" href="blog.css"> -->
+  <link rel="stylesheet" href="./footer.css">
   <meta name="description"
     content="LifeLink is an innovative eAmbulance platform designed to revolutionize emergency medical response systems. This cutting-edge solution bridges the gap between emergency situations and prompt medical attention, ensuring timely intervention and saving lives.">
   <meta name="keywords"
@@ -79,7 +80,7 @@
 
       <!-- ======About Us section====== -->
       <div class="about-us">
-        <h5>———— <span>Little Story About Us</span> ————</h5>
+        <h5>—— <span>Little Story About Us</span> ——</h5>
         <h2>Our History</h2>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path
@@ -98,7 +99,10 @@
         <img src="./Asset/hardy.jpg" alt="Founde's image">
         <h5><span>(EMD)Emergency Medicine Doctor</span></h5>
       </div>
+    </section>
 
+
+    
       <!-- =====Home page Ambulance gallary==== -->
       <div class="container-gallary1">
         <h2>Our Most Requested <span>Ambulance</span></h2>
@@ -167,7 +171,7 @@
                 <p>Price: #350,000.00</p>
                 <a href="./ambulance-type.html">Book Now</a>
 
-          </div>
+          <!-- </div>
           <div class="ambulance1" data-region="Lagos State" data-type="Patient Transport" data-price="150">
             <img src="./Asset/image-gallery/van-13.jpg" alt="Ambulance 4">
               <p>Name: Ambulance <span>C</span></p>
@@ -175,7 +179,7 @@
                 <p>Price: #150,000.00</p>
                 <a href="./ambulance-type.html">Book Now</a>
 
-          </div>
+          </div> -->
 
         </div>
 
@@ -184,7 +188,6 @@
 
       <!-- ======== Blog Page ======== -->
       <div class="container-blog">
-        <h5>—————— <span>Our Ambulance House</span> ——————</h5>
         <h2>Our Blog Page</h2>
 
         <div class="blog-posts">
@@ -197,71 +200,55 @@
 
           <div class="post">
             <img src="./image/News (3).jpg" alt="Emergency Response Blog Post">
-            <h3>Reducing Response Times with Technology and Innovation</h3>
+            <h3>Technology and Innovation</h3>
             <p>Advancements in Drone Technology for Medical Deliveries.</p>
             <a href="./chopper2.html">Read More</a>
           </div>
           <div class="post">
             <img src="./image/News (2).jpg" alt="Emergency Response Blog Post">
-            <h3></h3>
+            <h3>Emergency care</h3>
             <p>Telemedicine's Role in Emergency Care During Natural Disasters.</p>
             <a href="./chopper1.html">Read More</a>
           </div>
-          <div class="post">
+          <!-- <div class="post">
             <img src="./image/News (4).jpg" alt="Emergency Response Blog Post">
             <h3></h3>
             <p>The Rise of Mental Health Emergencies in Urban Areas.</p>
             <a href="./chopper3.html">Read More</a>
-          </div>
+          </div> -->
         </div>
       </div>
-
-      <!-- =======Enter mail======= -->
-      <div class="enter-mail">
-        <h2>Join Our Newsletter</h2>
-        <p>Enter your email address for our mailing list to keep your self update </p>
-        <div class="enter-mail-search">
-          <input type="text" placeholder="Enter your mail...">
-          <a href="#">Subscribe</a>
-        </div>
-
-
-      </div>
-
-
-
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
+      
+  <div id="modal" class="modal">
+      <div class="modal-content">
+           <span class="close" onclick="closeModal()">&times;</span>
           <h2 id="modal-title"></h2>
           <p id="modal-description"></p>
-        </div>
       </div>
-
     </div>
-  </section>
+
+     
+
 
 
   <!-- ====feedback==== -->
-  <section id="feedback" class="section">
+  <!-- <section id="feedback" class="section"> -->
     <div class="feedback">
       <h2>Feedback & Testimonials</h2>
       <p>We value your feedback and are committed to providing the highest level of service. Please fill out the form
         below to share your experience.</p>
       <form class="feedback-form" action="/submit-feedback" method="POST">
-        <label for="name">Name (Optional):</label>
-        <input type="text" id="name" name="name">
+        <!-- <label for="name"></label> -->
+        <input type="text" id="name" name="name" placeholder="Name (Optional)">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <!-- <label for="email">:</label> -->
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
 
-        <label for="phone">Phone Number (Optional):</label>
-        <input type="text" id="phone" name="phone">
+        <input type="text" id="phone" name="phone" placeholder="Phone Number (Optional)">
 
-        <label for="date">Date of Service:</label>
-        <input type="date" id="date" name="date" required>
+        <input type="date" id="date" name="date" required placeholder="Date of Service">
 
-        <label for="service">Type of Service Received:</label>
+        <!-- <label for="service">Type of Service Received:</label> -->
         <select id="service" name="service">
           <option value="emergency">Emergency Transport</option>
           <option value="non-emergency">Non-Emergency Transport</option>
@@ -288,13 +275,12 @@
           </div>
         </div>
 
-        <label for="comments">Your Comments:</label>
-        <textarea id="comments" name="comments" rows="5" required></textarea>
+        <textarea id="comments" name="comments" rows="5" required placeholder="Your comment"></textarea >
 
         <button type="submit" class="submit-btn">Submit Feedback</button>
       </form>
 
-      <h2>Patient Testimonials</h2>
+      <h4>Patient Testimonials</h4>
       <div class="testimonials">
         <div class="testimonial-item">
           <p><strong>Mercy Ike :</strong> "The paramedics were fast, professional, and provided excellent care
@@ -322,7 +308,19 @@
   </section>
   </div>
 
-  </section>
+   <!-- =======Enter mail======= -->
+   <div class="enter-mail">
+    <h2>Join Our Newsletter</h2>
+    <p>Enter your email address for our mailing list to keep your self update </p>
+    <div class="enter-mail-search">
+      <input type="text" placeholder="Enter your mail..." required>
+      <a href="#">Subscribe</a>
+    </div>
+
+
+  </div>
+
+
 
 
   <!-- ============SPA About Us page=========== -->
@@ -1060,7 +1058,7 @@
       </div>
     </div>
   </section>
-
+<!-- ------------------blog SPA--------------------- -->
   <section id="blog" class="section">
     <h2 class="blog-font">Our Blog Page</h2>
 
@@ -1117,30 +1115,23 @@
     </div>
   </section>
 
-  <!-- <div id="modal" class="modal">
-      <div class="modal-content">
-           <span class="close" onclick="closeModal()">&times;</span>
-          <h2 id="modal-title"></h2>
-          <p id="modal-description"></p>
-      </div>
-  </div> -->
 
-  <!-- ----------Footer section---------- 
+  <!-- ------------------- Footer section ---------------------  -->
 
   <div class="footer-images1">
-    <img class="plantpalace-logo-2" src="./Asset/logo_1-removebg-preview.png" alt="">
 
     <div class="footer-section-services1">
-      <h3>Our Services</h3>
+      <h3><span>Our</span> Services</h3>
 
       <div class="services1">
-        <li><a href="/emergency-services">Emergency Services.</a></li>
-        <li><a href="/patient-transport">Patient Transport.</a></li>
-        <li><a href="/medical-assistance">Medical Assistance.</a></li>
-        <li><a href="/ambulance-booking">Ambulance Booking.</a></li>
+        <li><a href="/emergency-services">Emergency Services</a></li>
+        <li><a href="/patient-transport">Patient Transport</a></li>
+        <li><a href="/medical-assistance">Medical Assistance</a></li>
+        <li><a href="/ambulance-booking">Ambulance Booking</a></li>
       </div>
     </div>
 
+   <div class="company-info-footer">
     <h5>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path
@@ -1154,22 +1145,20 @@
         <path
           d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z">
         </path>
-      </svg> Email:
-
-      Contact@Plantpalace.com
+      </svg> Email:Contact@Plantpalace.com
     </h5>
     <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path
           d="M19.9381 8H21C22.1046 8 23 8.89543 23 10V14C23 15.1046 22.1046 16 21 16H19.9381C19.446 19.9463 16.0796 23 12 23V21C15.3137 21 18 18.3137 18 15V9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9V16H3C1.89543 16 1 15.1046 1 14V10C1 8.89543 1.89543 8 3 8H4.06189C4.55399 4.05369 7.92038 1 12 1C16.0796 1 19.446 4.05369 19.9381 8ZM3 10V14H4V10H3ZM20 10V14H21V10H20ZM7.75944 15.7849L8.81958 14.0887C9.74161 14.6662 10.8318 15 12 15C13.1682 15 14.2584 14.6662 15.1804 14.0887L16.2406 15.7849C15.0112 16.5549 13.5576 17 12 17C10.4424 17 8.98882 16.5549 7.75944 15.7849Z">
         </path>
-      </svg> customer care:
-
-      (+234) 811 1759 940
+      </svg> customer care:(+234) 811 1759 940
     </h5>
+
+   </div>
+   <img class="plantpalace-logo-2" src="./Asset/logo_1-removebg-preview.png" alt="">
 
   </div>
   <div class="Copyright1">
-    <h6>Copyright © 2017 by wisdomTheme All Rights Reserved</h6>
     <h6>Payment Options:
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path
@@ -1190,6 +1179,9 @@
         </path>
       </svg>
     </h6>
+
+    <h6>Copyright © 2017 by wisdomTheme All Rights Reserved</h6>
+
     <h6>Follow us: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path
           d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
@@ -1215,9 +1207,14 @@
   </div>
 
 
-  </div>-->
+  <!-- </div> -->
   </section>
 
+
+
+
+
+  <!-- ----------------------SPA Container-------------------- -->
 
   <section id="contact" class="section">
     <!-- =====Contact page===== -->

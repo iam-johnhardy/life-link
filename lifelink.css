@@ -98,7 +98,7 @@ nav img{
 }
 
 section:nth-child(odd){
-  /* background-color: rgba(59, 103, 132, 0.1); */
+  background-color: rgba(59, 103, 132, 0.1);
 }
 
 /* ----Onclick---- */
@@ -142,7 +142,7 @@ ul a img{
   font-family: millik ;  
   display: flex;
   max-height: 80vh;
-  margin-top: -6em;
+  margin-bottom: 6rem;
 }
 .right{
   width: 60%;
@@ -153,7 +153,7 @@ span {
   color: #E90043;
 }
 svg {
-  width: 25px;
+  width: 20px;
 }  
 
 .left{
@@ -204,30 +204,42 @@ svg {
 }
 
 /* ---=====Home page Ambulance gallary=====--- */
+
 .container-gallary1{
   background-color: #fff;
+
+}
+
+
+.ambulance1 img {
+  min-height: 50vh;
+  width: 100%;
+  transition: transform 0.3s ease;
 
 }
 .container-gallary1 h2{
   font-size: 50px;
   text-align: center;
-  padding-top: 200px;
-  margin: 100px 0 30px 0;
+  padding-top: 50px;
+  margin: 40px 0 50px 0;
 
 }
+
+
 
 .gallery1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin:0 0 2rem 4rem ;
+  justify-content: space-evenly;
+  text-align: center;
+
 }
 
 .ambulance1 {
   padding: 10px;
-  width: 32%;
+  width: 50%;
   min-height: auto;
-  /* display: inline; */
+  display: inline;
   transition: transform 0.3s ease;
 }
 
@@ -235,11 +247,7 @@ svg {
   color: #E90043;
 }
 
-.ambulance1 img {
-  min-height: 50vh;
-  width: 95%;
-  transition: transform 0.3s ease;
-}
+
 
 .ambulance1:hover {
   transform: scale(1.05);
@@ -258,11 +266,8 @@ svg {
   padding: 3px 12px;
   font-size: 15px;
   border-radius: var(---border-radius-btn);
-  /* margin-top: 30px; */
   background: #E90043;
   color: #fff;
-
-
 
 
 }
@@ -273,7 +278,6 @@ svg {
 }
 
 .text {
-  position: absolute;
   transition: opacity 0.3s ease;
 }
 
@@ -293,57 +297,13 @@ svg {
 .text-hover:hover .text-after {
   opacity: 1;
   line-height: 30px;
-}
-
-/* .footer-images1 {
-  color: #000;
-  padding: 20px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom:1px solid rgba(157, 151, 151, 0.9) ;
-  font-family: "Dancing Script", system-ui;
-}
-
-.footer-section1{
-  background-color: rgba(51, 51, 51,0.4);
-}
-
-.plantpalace-logo-2 {
-  width: 100px;
-}
-
-.Copyright1 {
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin: auto 10px;
-  font-size: 20px;
-  font-family: "Dancing Script", system-ui;
-}
-
-.Copyright1 svg{
-  width: 30px;
-  margin-left: 10px;
-}
-
-.services1 {
-  font-size: 12px;
-  display: flex;
-  text-align: center;
-  padding:0 0 15px 10px;
-  gap: 10px;
 } */
+  /* end Home page  */
 
 
 /* <!-- ======About Us section====== --> */
 .about-us{
-  text-align: center;
   height: 300px;
-  margin-top: 50px;
-  padding:50px;
 }
 .about-us h5{
   margin-bottom: var(---font-margin-bottom);
@@ -397,40 +357,37 @@ svg {
 
 /* ---====Blog page====--- */
 .container-blog{
-  background-color: rgba(59, 103, 132, 0.1);
-  height: 100vh;
+  min-height: 100%;
 
 }
-.container-blog h5{
-  text-align: center;
-  padding-top: 100px;
 
-}
 .container-blog h2 {
   font-size: 50px;
   text-align: center;
-  padding:20px 0 50px 0;
+  padding:100px 0 40px 0;
 }
 
 .blog-posts {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: auto 3%;
 }
 
 .post {
+  max-width: 80%;
   border: 1cap solid #ddd;
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
+  text-align: center;
 }
 .post:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -10px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .post img {
-  width: 300px;
-  height: 400px;
   object-fit: cover;
-  background-color: #fff;
 
 }
 
@@ -443,7 +400,7 @@ svg {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .modal-content {
@@ -470,85 +427,6 @@ svg {
   cursor: pointer;
 }
 
-/* .footer-images1 {
-  color: #000;
-  padding: 20px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom:1px solid rgba(157, 151, 151, 0.9) ;
-  font-family: "Dancing Script", system-ui;
-}
-
-.footer-section1{
-  background-color: rgba(51, 51, 51,0.4);
-}
-
-.plantpalace-logo-2 {
-  width: 100px;
-}
-
-.Copyright1 {
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin: auto 10px;
-  font-size: 20px;
-  font-family: "Dancing Script", system-ui;
-}
-
-.Copyright1 svg{
-  width: 30px;
-  margin-left: 10px;
-}
-
-.services1 {
-  font-size: 12px;
-  display: flex;
-  text-align: center;
-  padding:0 0 15px 10px;
-  gap: 10px;
-} */
-
-
-
-/* ----======Enter mail======---- */
-.enter-mail{
-  background-color: #fff;
-  height: 15vh;
-  margin-top: 20rem;
-}
-.enter-mail h2{
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-.enter-mail p{
-  font-size: 20px;
-}
-.enter-mail-search {
-  padding: 20px;
-}
-.enter-mail-search input{
-  padding: 20px;
-  width: 30%;
-  border-radius: var(---border-radius-btn);
-  border: none;
-  background-color: rgba(59, 103, 132, 0.1);
-
-}
-.enter-mail-search a{
-  padding: var(---btn-padding);
-  border: 1px solid #000;
-  border-radius: var(---border-radius-btn);
-  font-size: 20px;
-}
-.enter-mail-search a:hover{
-  background-color: #E90043;
-  color: #fff;
-
-}
 
 /* ---====contact page====--- */
 .contact-page{
@@ -632,47 +510,6 @@ svg {
   width:50%;
   border-radius: 50px;
 }
-/* .footer-images1 {
-  color: #000;
-  padding: 20px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom:1px solid rgba(157, 151, 151, 0.9) ;
-  font-family: "Dancing Script", system-ui;
-}
-
-.footer-section1{
-  background-color: rgba(51, 51, 51,0.4);
-}
-
-.plantpalace-logo-2 {
-  width: 100px;
-}
-
-.Copyright1 {
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin: auto 10px;
-  font-size: 20px;
-  font-family: "Dancing Script", system-ui;
-}
-
-.Copyright1 svg{
-  width: 30px;
-  margin-left: 10px;
-}
-
-.services1 {
-  font-size: 12px;
-  display: flex;
-  text-align: center;
-  padding:0 0 15px 10px;
-  gap: 10px;
-} */
 
 /* ---====Types of eAmbulance=====-- */
 .ambulance-container {
@@ -774,12 +611,12 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 /* ---=====feedback=====--- */
 .feedback {
-  max-width: 75rem;
+  max-width: 55rem;
   margin:  auto;
   padding: 20px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin-top:var(---space-margin-top);
+  margin-top:15em;
 }
 
 .feedback-form input, 
@@ -796,7 +633,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   direction: rtl;
 }
 .rating h3{
-  margin: 0;
+  margin: 0%;
 }
 .stars {
   display: inline-block;
@@ -830,6 +667,14 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #E90043;
 }
 
+.feedback h4{
+  padding-top: 15px;
+  font: 500;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
 .testimonials {
   display: flex;
   overflow-x: auto;
@@ -846,16 +691,55 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .testimonials::-webkit-scrollbar {
-  height: 8px; 
+  height:  5px; 
 }
 .testimonials::-webkit-scrollbar-thumb {
   background-color: #ccc;
   border-radius: 10px;
 }
 .testimonials::-webkit-scrollbar-track {
-  background: #f4f4f4;
+  background:  #E90043;
+  border-radius: 10px;
+
 }
 
+/* ----======Enter mail======---- */
+.enter-mail{
+  background-color: #fff;
+  height: 29vh;
+  margin-top: 10rem;
+  text-align: center;
+}
+.enter-mail h2{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.enter-mail p{
+  font-size: 20px;
+}
+.enter-mail-search {
+  padding: 20px;
+}
+.enter-mail-search input{
+  padding: 20px;
+  width: 30%;
+  border-radius: var(---border-radius-btn);
+  border: none;
+  background-color: rgba(59, 103, 132, 0.1);
+
+}
+.enter-mail-search a{
+  padding: var(---btn-padding);
+  border: 1px solid #000;
+  border-radius: var(---border-radius-btn);
+  font-size: 20px;
+  color: #000;
+}
+.enter-mail-search a:hover{
+  background-color: #E90043;
+  color: #fff;
+
+}
 /* ---=====site map=====--- */
 .site-map{
   background-color: rgba(59, 103, 132, 0.2);
@@ -882,23 +766,38 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 @media (max-width: 576px) {
   button img{
     display: block;
+    align-items: center;
+    justify-content: center;
   }
-  .sideBar{
-    width: 100%;
-  }
+ 
   nav ul {
     flex-direction: row;
-    text-align: center;
-    margin: 0;
-    justify-content: space-around;
+    align-items: center;
+
+    /* text-align: center; */
+    /* padding-left: 3rem; */
+    margin: 0 0 0 2rem;
+    justify-content: center;
     
+  }
+  .sideBar{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffffbe;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+  
   }
   .hideOnMobile{
     display: none;
   }
 
   .hero-section {
-    width: 90%;
+    outline: 2px solid red;
+    width: 100%;
     flex-direction: column;
     margin-top: -6em;
   }
@@ -919,19 +818,26 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin:15px 50px;
     font-size: 0.6rem;
   }
-  .left p{
-    font-size: 1rem;
-    line-height: 20px;
-    color: rgb(193, 189, 189) ;
-    padding-right: 20px;
-  }
+  
   .left h6 {
     padding: 20px;
     font-size: 0.7rem;
   }
+  .call-num{
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #E90043;
+  }
   .right{
   display: none;
   
+  }
+  .about-us p{
+    color: var(---p-color);
+    margin: auto 0px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .gallery1 {
@@ -955,6 +861,13 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   .testimonials {
     flex-direction: column;
   }
+  .enter-mail-search a{
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: var(---border-radius-btn);
+    font-size: 20px;
+    color: #000;
+  }
 }
 
 /* Small Devices (Tablets, 576px - 768px) */
@@ -969,16 +882,11 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   
 
   .hero-section {
-    flex-direction: column;
-    margin-top: -6em;
-  }
-  .right{
-    display: none;
    
   }
 
   .left{
-    min-width: 50%;
+    min-width: 100%;
     color: #fff;
     padding: 30px;
     margin-top: 70px;
@@ -994,9 +902,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 5px;
   }
 
-  .ambulance1 {
-    width: 48%;
-  }
+
 
   .container-blog h2 {
     font-size: 40px;
@@ -1098,14 +1004,14 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*   Desktops  */
-/* @media screen and (max-width: 1440px) {
+ @media screen and (max-width: 1440px) {
   nav ul{
     margin-right: 9rem;
     font-weight: bold;
     font-size: 20px;
   }
   .hero-section{
-    max-width:80%;
+    max-width:100%;
   }
   .logo {
     margin-right: 10rem;
@@ -1115,20 +1021,21 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 10%;
   }
   
-} */
+} 
 
 /*  Tablet  */
-/* @media (max-width: 800px) {
+ /* @media  (max-width: 800px) {
+
   .hideOnMobile{
     display: none;
   
   }
 
   
-} */
+}  */
 
 /*  Phone  */
-/* @media (max-width: 600px) {
+ /* @media (max-width: 600px) {
   nav ul{
     display: flex;
     flex-direction: row;
@@ -1184,7 +1091,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     height: 200px;
 
   }
-} */
+}  */
 
 /* @media (max-width: 400px) {
   nav ul{
@@ -1242,4 +1149,4 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   
-} */
+} 

@@ -1,12 +1,12 @@
- * {
+ /* * {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-/* header { */
-    /* background: #333;
+header { 
+    background: #333;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -15,24 +15,24 @@
 nav a {
     color: white;
     margin: 0 15px;
-    text-decoration: none;
-} */
+    text-decoration: none; */
+/* }  */
 
 .blog-posts {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* gap: 20px; */
-    /* padding: 10px 20px; */
+    gap: 20px;
+    padding: 10px 20px;
 }
 
 .post {
 
-    /* background: white; */
+    background: white;
     border: 1cap solid #ddd;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
-    /* transition: box-shadow 0.3s; */
+    transition: box-shadow 0.3s;
 }
 .post img {
     width: 200px;
