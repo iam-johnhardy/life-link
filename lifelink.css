@@ -12,9 +12,6 @@ a {
   text-decoration: none;
 }
 
-body {
-
-}
 :root {
   ---font-h2-size:40px;
   ---transition-duration:0.5s;
@@ -298,8 +295,6 @@ svg {
   opacity: 1;
   line-height: 30px;
 } */
-  /* end Home page  */
-
 
 /* <!-- ======About Us section====== --> */
 .about-us{
@@ -882,6 +877,11 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   
 
   .hero-section {
+    flex-direction: column;
+    margin-top: -6em;
+  }
+  .right{
+    display: none;
    
   }
 
@@ -976,9 +976,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 /* Extra Large Devices (Desktops, > 1200px) */
 @media (min-width: 1200px) {
-  nav ul {
-    /* margin-right: 10rem; */
-  }
+ 
 
   .hero-section {
     margin-top: -6em;
@@ -1020,133 +1018,5 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   img .right {
     width: 10%;
   }
-  
-} 
-
-/*  Tablet  */
- /* @media  (max-width: 800px) {
-
-  .hideOnMobile{
-    display: none;
-  
-  }
-
-  
-}  */
-
-/*  Phone  */
- /* @media (max-width: 600px) {
-  nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    margin: 0 10rem 0 -2rem;
-  }
-  
-
-  .hero-section{
-    background-color: #3B6784;
-    font-family: millik ;  
-    display: flex;
-    max-height: 80vh;
-    margin-top: -7em;
-  }
-
-  button {
-    display: block;
-  }
-  .right{
-    display: none;
-   
-  }
-  .left{
-    width: 100%;
-    color: #fff;
-    padding: 30px;
-  
-  }
-  .container-gallary1{
-    width: 100%;
-  }
-  .gallery1{
-    display: none;
-  }
-
-
-  .container-blog{
-    width: 100%;
-    height:100vh;
-  }
-  .blog-posts {
-    display:block;
-  }
-  .container-blog h5{
-    font-size: 10px;
-  }
-  .container-blog h2 {
-    font-size: 40px;
-  }
-  .post img {
-    width: 200px;
-    height: 200px;
-
-  }
-}  */
-
-/* @media (max-width: 400px) {
-  nav ul{
-    display: flex;
-    flex-direction: row;
-    margin: 0 3rem 0 5rem;
-    gap: 10rem;
-  }
-  .sideBar{
-    width: 100%;
-  
-  }
- 
-  .hero-section{
-    background: radial-gradient((rgb(176, 187) , 195), url(./Asset/emergency\ van\ \(5\).jpg) );
-    width: 100%;
-    margin-top: -10em;
-  }
-  
-  nav ul{
-    margin: auto 80%;
-
-
-  }
-  .right{
-    display: none;
-  }
-  .left{
-    width: 100%;
-  }
-  .container-gallary1{
-    width: 100%;
-  }
-  .gallery1 {
-    display: block;
-  }
-  
-  .container-blog{
-    width: 100%;
-    height:100vh;
-  }
-  .blog-posts {
-    display:block;
-  }
-  .container-blog h5{
-    font-size: 10px;
-  }
-  .container-blog h2 {
-    font-size: 40px;
-  }
-  .post img {
-    width: 200px;
-    height: 200px;
-  
-  }
-
   
 } 
